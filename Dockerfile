@@ -26,22 +26,22 @@ RUN apt-get update && \
  libtool
 
 WORKDIR /opt/
-#COPY src /opt/
+COPY . /opt/
 COPY install_ragel.sh /opt/
 RUN ./install_ragel.sh
 
 # the scanner will need to be re-compiled when the user makes a change, 
 # but we'll compile it the first time so they can get started immediately.
 ENV PATH="${PATH}:/usr/local/ragel7/bin"
-#WORKDIR /opt/postings_list/query
-#RUN make scanner
-#RUN  make read_tf_idf
+WORKDIR /opt/
+RUN make scanner
+RUN  make read_tf_idf
 
 
 RUN echo "alias python=python3" > /root/.bashrc
 RUN echo "export PATH=$PATH:/usr/local/ragel7/bin" >> /root/.bashrc
 
 #RUN pip3 install pandas
-#RUN /bin/bash -l /root/.bashrc
+RUN /bin/bash -l /root/.bashrc
 
 
