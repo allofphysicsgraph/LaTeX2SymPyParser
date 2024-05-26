@@ -7,7 +7,7 @@ make read_tf_idf
 ./scanner path_to_latex documents  
 ./read_tf_idf tf_idf
 
-tf_idf scores are added when the score is gt 0.
+tf_idf scores are added when there is more than one document.  
 output files are tf_idf and offsets.  
 
 
