@@ -369,23 +369,9 @@ latex = eq |
 '{-1}' |
 '{1}' |
 '{1/2}' |
-'(1990)' |
-'(1991)' |
-'(1992)' |
-'(1993)' |
-'(1994)' |
-'(1995)' |
-'(1996)' |
-'(1997)' |
-'(1998)' |
-'(1999)' |
 '(2)' |
 '[2]' |
 '{2}' |
-'(2000)' |
-'(2001)' |
-'(2002)' |
-'(2003)' |
 '(3)' |
 '{3}' |
 '(4)' |
@@ -852,15 +838,7 @@ multline  |
 "\\nearrow" |
 "\\neg" |
 "\\neq" |
-"\\newcommand" |
-'\\newcommand{\\bea}{\\begin{eqnarray}}' |
-'\\newcommand{\\be}{\\begin{equation}}' |
-"\\newcommand" braces |
-"\\newcommand" braces braces{1,2} |
-'\\newcommand{\\eea}{\\end{eqnarray}}' |
-'\\newcommand{\\ee}{\\end{equation}}' |
 "\\newcounter[name]" |
-"\\newenvironment" |
 "\\newfont" |
 "\\newlength" |
 "\\newline" |
@@ -1175,7 +1153,6 @@ titlepage  |
 "\\usecounter" |
 "\\usepackage" braces |
 "\\v" |
-'\\v' |
 "\\value" |
 "\\varepsilon" |
 "\\varphi" |
