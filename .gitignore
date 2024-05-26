@@ -50,3 +50,10 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+scanner.c
+reader.c
+ams_latex_tokens.c
+tf_idf
+offsets
+file_xxh64

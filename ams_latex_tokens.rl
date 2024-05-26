@@ -1,5 +1,5 @@
 %%{
-  machine latex;
+  machine ams_latex;
 comment='%' (any{1,100}-'\n') '\n';
 
 math_begin = '\\begin{math}' @{n++; };
