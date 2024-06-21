@@ -53,8 +53,11 @@ if ((te - ts) < 1000) {
       }
         ////write_to_file("offsets", " %d  %d\n", offset, length);
 memset(temp_buffer,'\0',10024);
-strncpy(temp_buffer,&in[ts-in+2],te-ts-1);
-scanner(temp_buffer,hash_test,te-ts-1,filename);
+//strncpy(temp_buffer,&in[ts-in+2],te-ts-1);
+//scanner(temp_buffer,hash_test,te-ts-1,filename);
+strncpy(temp_buffer,&in[ts-in+17],te-ts-32);
+scanner(temp_buffer,hash_test,te-ts-32,filename);
+
 }
 
 

@@ -282,9 +282,19 @@ left_parens = '(' @{n++;};
 right_parens = ')' @{n--; };
 parens_body = any - (left_parens|right_parens);
 parens = '(' @{n=0;} (left_parens|right_parens|parens_body)* :> ')' when{!n};
-
-
+underscore = '_' ; 
+bin_op = "+" | "-" | "*" | "/" ; 
+ws = " ";
+integer = "0" | [1-9][0]* ; 
 latex = eq | 
+"\\sum" underscore braces | 
+"=" | 
+"x" | 
+integer | 
+"+" | 
+bin_op | 
+ws | 
+underscore | 
 "\\href" braces braces |
 "\\input" braces |
 "[]" |
@@ -425,16 +435,8 @@ array  |
 "\\baselineskip" |
 "\\baselinestretch" |
 "\\Bbb" |
-"\\begin" |
-"\\begin{" |
-"\\begin{acknowledgments}" |
 "\\begin" braces |
-"\\begin{document}" |
-"{\\begin{eqnarray}}" |
-"{\\begin{equation}}" |
-"\\begin{figure*}" |
 "\\begin[pos]" |
-"\\begin{references}" |
 "\\beta" |
 "\\bf" |
 "\\bibitem" |
@@ -542,7 +544,6 @@ corollary  |
 "\\date" |
 "\\date{}" |
 "\\date" braces |
-"\\date{\\today}" |
 "\\day" |
 "\\dbinom" |
 "\\dblfloatpagefraction" |
@@ -556,9 +557,7 @@ corollary  |
 "\\ddot" |
 "\\ddots" |
 "\\def" |
-"{definition}" |
 definition  |
-"{Definition}" |
 "\\deg" |
 "\\delimiterfactor" |
 "\\delta" |
@@ -608,16 +607,7 @@ displaymath  |
 "\\end{abstract}" |
 "\\end{acknowledgments}" |
 "\\end" braces |
-"\\end{center}" |
-"\\end{document}" |
-"{\\end{eqnarray}}" |
-"\\end{equation}" |
-"{\\end{equation}}" |
-"\\end{figure*}" |
-"\\end{figure}" |
 "\\endinput" |
-"\\end{references}" |
-"\\end{thebibliography}" |
 enumerate  |
 "\\env" |
 "\\envert" |
@@ -633,7 +623,6 @@ eqnarray  |
 "\\eval" |
 "\\evensidemargin" |
 example  |
-"{Example}" |
 "\\exists" |
 "\\exp" |
 "\\fbox" |
@@ -713,8 +702,6 @@ gather  |
 "\\Huge" |
 "\\hyphenation" |
 "(i)" |
-"{i}" |
-"{i=1}" |
 "\\idotsint" |
 "\\iff" |
 "\\iffalse" |
