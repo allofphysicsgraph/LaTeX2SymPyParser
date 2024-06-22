@@ -287,6 +287,11 @@ bin_op = "+" | "-" | "*" | "/" ;
 ws = " ";
 integer = "0" | [1-9][0]* ; 
 latex = eq | 
+"&=" |
+alpha underscore braces |  
+alpha underscore (any-'{') | 
+alpha "^" braces |
+alpha "^" (any-'{') |
 "^" |
 "a" |
 "b" |
@@ -798,6 +803,7 @@ lemma  |
 "\\lfloor" |
 "\\lg" |
 "\\lhd" |
+"\\lim" underscore braces |
 "\\lim" |
 "\\liminf" |
 "\\limits" |
