@@ -494,7 +494,6 @@ definition  |
 "\\delta" underscore braces | 
 description  |
 "\\det" |
-"\\dfrac" |
 "\\diamond" |
 "\\Diamond" |
 "\\diamondsuit" |
@@ -583,17 +582,25 @@ flushright  |
 "\\footskip" |
 "\\forall" |
 "f" parens |
+
 "\\frac" |
 "\\frac" braces braces | 
-"\\frace" braces |
+"\\frac" braces (any-'{') |
+"\\frac" (any-'{') braces |
+"\\frac" (any-'{') (any-'{')
+
+"\\dfrac" |
+"\\dfrac" braces braces | 
+"\\dfrac" braces (any-'{') |
+"\\dfrac" (any-'{') braces |
+"\\dfrac" (any-'{') (any-'{')
+
 "\\frame" |
 frame  |
 "\\framebox" |
 "\\framebox[size][pos]" |
 "\\frame" brackets braces |
 "\\frametitle" braces |
-"\\frown" |
-"\\fussy" |
 "g" |
 "G" |
 "\\gamma" |
@@ -726,6 +733,7 @@ lemma  |
 "\\limits" |
 "\\limsup" |
 "\\lim" underscore braces |
+"\\lim " underscore braces |
 "\\linebreak" |
 "\\linebreak[n]" |
 "\\linethickness" |
