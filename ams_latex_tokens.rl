@@ -286,7 +286,22 @@ underscore = '_' ;
 bin_op = "+" | "-" | "*" | "/" ; 
 ws = " ";
 integer = "0" | [1-9][0]* ; 
+summation = "\\sum" | "\\sum " underscore braces | 
+"\\sum" underscore braces | 
+"\\sum " underscore braces "^" braces | 
+"\\sum" underscore braces "^" braces ;
+
+integral = "\\int" | "\\int " underscore braces | 
+"\\int" underscore braces | 
+"\\int " underscore braces "^" braces | 
+"\\int" underscore braces "^" braces ;
+
 latex = eq | 
+summation |
+integral |
+"u"|"v"|"w" |
+">" | 
+"<" |  
 "&=" |
 "+" | 
 "<<" |
@@ -1012,11 +1027,6 @@ subequations  |
 "\\subsubsection[toctitle]" |
 "\\succ" |
 "\\succeq" |
-"\\sum" |
-"\\sum " underscore braces | 
-"\\sum" underscore braces | 
-"\\sum " underscore braces "^" braces | 
-"\\sum" underscore braces "^" braces |
 "\\sup" |
 "\\supset" |
 "\\supseteq" |
