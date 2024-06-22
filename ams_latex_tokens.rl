@@ -292,7 +292,11 @@ alpha underscore braces |
 alpha underscore (any-'{') | 
 alpha "^" braces |
 alpha "^" (any-'{') |
+"\\hdots" |
+"\\\\"  |
 "^" |
+[ ]+ "&" [ ]+ |
+"-"? integer ("x"|"y"|"z") |  
 "a" |
 "b" |
 "f" parens |
