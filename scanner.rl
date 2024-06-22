@@ -20,6 +20,9 @@
 #include "globals.h"
 
 char temp_buffer[10024];
+#define CASES_MAX_SIZE 2000
+char cases_temp[CASES_MAX_SIZE];
+
 int n;
 int in_size = 0;
 
@@ -36,7 +39,6 @@ main :=|*
 
 "I expected something else here" ; 
 cases => {
-
 if ((te - ts) < 1000) {
   XXH64_canonical_t dst;
   char temp[te - ts + 1];
@@ -53,12 +55,9 @@ if ((te - ts) < 1000) {
         ////write_to_file("offsets","%02x",dst.digest[i]);
       }
         ////write_to_file("offsets", " %d  %d\n", offset, length);
-memset(temp_buffer,'\0',10024);
-//strncpy(temp_buffer,&in[ts-in+2],te-ts-1);
-//scanner(temp_buffer,hash_test,te-ts-1,filename);
-strncpy(temp_buffer,&in[ts-in+14],te-ts-29);
-scanner(temp_buffer,hash_test,te-ts-29,filename);
-
+memset(cases_temp,'\0',CASES_MAX_SIZE);
+strncpy(cases_temp,&in[ts-in+14],te-ts-29);
+scanner(cases_temp,hash_test,te-ts-29,filename);
 }};
 
 equation => {
@@ -133,7 +132,7 @@ strncpy(temp_buffer,&in[ts-in+14],te-ts-29);
 scanner(temp_buffer,hash_test,te-ts-29,filename);
 }};
 
-(split|cases) => {
+split => {
 if ((te - ts) < 1000) {
   XXH64_canonical_t dst;
   char temp[te - ts + 1];
