@@ -285,21 +285,80 @@ parens = '(' @{n=0;} (left_parens|right_parens|parens_body)* :> ')' when{!n};
 underscore = '_' ; 
 bin_op = "+" | "-" | "*" | "/" ; 
 ws = " ";
-integer = "0" | [1-9][0]* ; 
+integer = "0" | [1-9] digit* ; 
 summation = "\\sum" | "\\sum " underscore braces | 
 "\\sum" underscore braces | 
 "\\sum " underscore braces "^" braces | 
-"\\sum" underscore braces "^" braces ;
+"\\sum" underscore braces "^" braces |
+"\\sum" underscore braces "^" (any-'{') |
+"\\sum" underscore (any-'{') "^" braces |
+"\\sum" underscore (any-'{') "^" (any-'{');
 
-integral = "\\int" | "\\int " underscore braces | 
-"\\int" underscore braces | 
-"\\int " underscore braces "^" braces | 
-"\\int" underscore braces "^" braces ;
+integral_prefix = "\\int" |
+"\\iiiint" |
+"\\iiint" |
+"\\iint" | 
+"\\oint" ;
+
+integral = integral_prefix | integral_prefix [ ] underscore braces | 
+integral_prefix underscore braces | 
+integral_prefix [ ] underscore braces "^" braces | 
+integral_prefix underscore braces "^" braces |
+integral_prefix underscore braces "^" (any-'{') |
+integral_prefix underscore (any-'{') "^" braces |
+integral_prefix underscore (any-'{') "^" (any-'{') | 
+integral_prefix (any-'{') underscore (any-'{') ; 
+
+
+func_normal = 
+ '\\exp'|
+ '\\log'|
+ '\\lg'|
+ '\\ln'|
+ '\\sin'|
+ '\\cos'|
+ '\\tan'|
+ '\\csc'|
+ '\\sec'|
+ '\\cot'|
+ '\\arcsin'|
+ '\\arccos'|
+ '\\arctan'|
+ '\\arccsc'|
+ '\\arcsec'|
+ '\\arccot'|
+ '\\sinh'|
+ '\\cosh'|
+ '\\tanh'|
+ '\\arsinh'|
+ '\\arcosh'|
+ '\\artanh';
+
+
+Italic_Greek = 
+'\\varGamma' |
+'\\varDelta' |
+'\\varTheta' |
+'\\varLambda' |
+'\\varXi' |
+'\\varPi' |
+'\\varSigma' |
+'\\varUpsilon' |
+'\\varPhi' |
+'\\varPsi' |
+'\\varOmega' ;
+
 
 latex = eq | 
+Italic_Greek |
+func_normal |
+func_normal braces |
+func_normal parens |
 summation |
 integral |
-"u"|"v"|"w" |
+"W" | "u"|"v"|"w" | "n"|
+parens "^" (any-'{') | 
+parens "^" braces  |
 ">" | 
 "<" |  
 "&=" |
@@ -328,9 +387,8 @@ aligned  |
 "\\alph" |
 "\\Alph" |
 "\\alpha" |
-"{\\alpha}" |
-alpha "^" (any-'{') |
-alpha "^" braces |
+integer? alpha "^" (any-'{') |
+integer? alpha "^" braces |
 alpha underscore (any-'{') | 
 alpha underscore (any-'{') "^" (any-'{')| 
 alpha underscore braces |  
@@ -340,11 +398,6 @@ alpha underscore braces "^" braces |
 "\\angle" |
 "\\appendix" |
 "\\approx" |
-"\\arabic" |
-"\\arabic" braces |
-"\\arccos" |
-"\\arcsin" |
-"\\arctan" |
 "\\arg" |
 array  |
 "\\arraycolsep" |
@@ -410,9 +463,6 @@ braces "^" braces |
 brackets  |
 "\\breve" |
 "\\bslash" |
-"\\bullet" |
-"\\bysame" |
-"(c)" |
 "\\cal" |
 "\\cap" |
 "\\caption" |
@@ -432,12 +482,7 @@ center  |
 "\\chardef" |
 "\\check" |
 "\\chi" |
-"\\circ" |
-"\\circle" |
-"\\circle*" |
-"\\cite" |
 "\\cite" braces |
-"\\cite[subcit]" |
 "\\cleardoublepage" |
 "\\clearpage" |
 "\\cline" |
@@ -454,12 +499,6 @@ comment |
 "\\coprod" |
 "\\copyright" |
 corollary  |
-"\\cos" |
-"\\cos" "^" braces |
-"\\cosh" |
-"\\cos" parens |
-"\\cot" |
-"\\coth" |
 "\\cov" |
 "\\cs" |
 "\\csc" |
@@ -532,8 +571,6 @@ displaymath  |
 "\\en" |
 "\\encl" |
 "\\end" |
-"\\end{abstract}" |
-"\\end{acknowledgments}" |
 "\\end" braces |
 "\\endinput" |
 enumerate  |
@@ -551,7 +588,6 @@ eqnarray  |
 "\\evensidemargin" |
 example  |
 "\\exists" |
-"\\exp" |
 "f" |
 "\\fbox" |
 "\\fboxrule" |
@@ -587,13 +623,18 @@ flushright  |
 "\\frac" braces braces | 
 "\\frac" braces (any-'{') |
 "\\frac" (any-'{') braces |
-"\\frac" (any-'{') (any-'{')
-
+"\\frac" (any-'{') (any-'{')  | 
 "\\dfrac" |
 "\\dfrac" braces braces | 
 "\\dfrac" braces (any-'{') |
 "\\dfrac" (any-'{') braces |
-"\\dfrac" (any-'{') (any-'{')
+"\\dfrac" (any-'{') (any-'{') |
+
+"\\tfrac" |
+"\\tfrac" braces braces | 
+"\\tfrac" braces (any-'{') |
+"\\tfrac" (any-'{') braces |
+"\\tfrac" (any-'{') (any-'{') | 
 
 "\\frame" |
 frame  |
@@ -641,18 +682,12 @@ gather  |
 "\\huge" |
 "\\Huge" |
 "\\hyphenation" |
-"(i)" |
 "-i" | 
 "\\idotsint" |
 "\\iff" |
 "\\iffalse" |
 "\\ifvoid" |
 "\\ifx" |
-"(ii)" |
-"(iii)" |
-"\\iiiint" |
-"\\iiint" |
-"\\iint" |
 "\\Im" |
 "\\imath" |
 "\\in" |
@@ -665,7 +700,6 @@ gather  |
 "\\infty" |
 "\\input" |
 "\\input" braces |
-"\\int" |
 integer | 
 "-"? integer ("x"|"y"|"z") |  
 "\\interval" |
@@ -743,9 +777,7 @@ list |
 "\\listoftables" |
 "\\listparindent" |
 "\\ll" |
-"\\ln" |
 "\\lnot" |
-"\\log" |
 "\\longleftarrow" |
 "\\Longleftarrow" |
 "\\longleftrightarrow" |
@@ -846,7 +878,6 @@ multline  |
 "\\odot" |
 "\\oe" |
 "\\OE" |
-"\\oint" |
 "\\omega" |
 "\\Omega" |
 "\\ominus" |
@@ -954,7 +985,6 @@ remark  |
 "\\rule" |
 "\\rule[height]" |
 "\\rvert" |
-"(s)" |
 "\\S" |
 "\\savebox" |
 "\\sbox" |
@@ -963,18 +993,12 @@ remark  |
 "\\scriptsize" |
 "\\scriptstyle" |
 "\\searrow" |
-"\\sec" |
 "\\secref" |
 "\\section" |
 "\\section*" |
 "\\section" braces |
-"\\section{Conclusion}" |
-"\\section{Conclusions}" |
-"\\section{Discussion}" |
-"\\section{Introduction}" |
+"\\section" brackets |
 "\\sectionmark" |
-"\\section{Results}" |
-"\\section[toctitle]" |
 "\\seg" |
 "\\setbox" |
 "\\setcounter" |
@@ -992,9 +1016,6 @@ remark  |
 "\\signature" |
 "\\sim" |
 "\\simeq" |
-"\\sin" |
-"\\sinh" |
-"\\sin" parens | 
 "\\skip" |
 "\\sl" |
 "\\sloppy" |
@@ -1008,8 +1029,7 @@ remark  |
 split  |
 "\\sqcap" |
 "\\sqcup" |
-"\\sqrt" |
-"\\sqrt[3]" |
+"\\sqrt" brackets |
 "\\sqrt" braces |
 "\\sqsubset" |
 "\\sqsubseteq" |
@@ -1041,7 +1061,6 @@ subequations  |
 "\\surd" |
 "\\swarrow" |
 "\\symbol" |
-"(t)" |
 "\\t" |
 "\\tabbing" |
 "\\tabbingsep" |
@@ -1068,7 +1087,6 @@ tabular  |
 "\texttt" braces |
 "\\textup" |
 "\\textwidth" |
-"\\tfrac" |
 "\\thanks" |
 thebibliography  |
 "\\theequation" |
@@ -1173,7 +1191,6 @@ verbatim  |
 "\\wr" |
 ws | 
 "\\wt" |
-"(x)" |
 "x" | 
 "\\xdef" |
 "\\xi" |
