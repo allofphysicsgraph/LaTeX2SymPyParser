@@ -296,6 +296,10 @@ alpha "^" (any-'{') |
 "a" |
 "b" |
 "f" parens |
+"g" |
+braces "^" braces |
+underscore braces "^" braces |
+"d" ("x" | "y" | "z") | 
 "|" |
 "K" |
 "G" |
@@ -304,6 +308,7 @@ alpha "^" (any-'{') |
 "f" |
 "A" | 
 "\\sum" underscore braces | 
+"\\sum " underscore braces | 
 "=" | 
 "x" | 
 integer | 
@@ -544,6 +549,8 @@ comment |
 "{corollary}" |
 corollary  |
 "{Corollary}" |
+"\\cos" parens |
+"\\cos" "^" braces |
 "\\cos" |
 "\\cosh" |
 "\\cot" |
@@ -578,6 +585,8 @@ definition  |
 "\\deg" |
 "\\delimiterfactor" |
 "\\delta" |
+"\\delta" underscore braces | 
+"\\delta " underscore braces |
 "\\Delta" |
 description  |
 "\\det" |
@@ -1073,6 +1082,8 @@ remark  |
 "\\sim" |
 "\\simeq" |
 "\\sin" |
+"\\sin" parens | 
+
 "\\sinh" |
 "\\skip" |
 "\\sl" |
