@@ -288,136 +288,18 @@ ws = " ";
 integer = "0" | [1-9][0]* ; 
 latex = eq | 
 "&=" |
-alpha underscore braces |  
-alpha underscore (any-'{') | 
-alpha "^" braces |
-alpha "^" (any-'{') |
-"\\hdots" |
+"+" | 
+"<<" |
+"=" | 
 "\\\\"  |
 "^" |
-[ ]+ "&" [ ]+ |
-"-"? integer ("x"|"y"|"z") |  
-"a" |
-"b" |
-"f" parens |
-"g" |
-braces "^" braces |
-underscore braces "^" braces |
-"d" ("x" | "y" | "z") | 
 "|" |
-"K" |
-"G" |
-"<<" |
-"y" | 
-"f" |
-"A" | 
-"\\sum" underscore braces | 
-"\\sum " underscore braces | 
-"=" | 
-"x" | 
-integer | 
-"+" | 
-bin_op | 
-ws | 
-underscore | 
-"\\href" braces braces |
-"\\input" braces |
-"[]" |
-"{}" |
-"$, $" |
-"$0$" |
-"$^{-1}$" |
-"$1$" |
-"$^2$" |
-"$2$" |
-"$a$" |
-"$A$" |
-"$\\alpha$" |
-"$ and $" |
+[ ]+ "&" [ ]+ |
 "$" (any-"$"){1,80} "$"  | 
-"$b$" |
-"$B$" |
-"$\\beta$" |
-"$c$" |
-"$C$" |
-"$d$" |
-"$D$" |
-"$\\delta$" |
-"$\\Delta$" |
-"$E$" |
-"$\\epsilon$" |
-"$\\eta$" |
-"$f$" |
-"$F$" |
-"$g$" |
-"$G$" |
-"$\\gamma$" |
-"$\\Gamma$" |
-"$h$" |
-"$H$" |
-"$i$" |
-"$I$" |
-"$j$" |
-"$k$" |
-"$K$" |
-"$l$" |
-"$L$" |
-"$\\lambda$" |
-"$\\Lambda$" |
-"$m$" |
-"$M$" |
-"$\\mu$" |
-"$n$" |
-"$N$" |
-"$\\nu$" |
-"$\\omega$" |
-"$p$" |
-"$P$" |
-"$\\phi$" |
-"$\\pi$" |
-"$q$" |
-"$Q$" |
-"$r$" |
-"$R$" |
-"$\\rho$" |
-"$s$" |
-"$S$" |
-"$\\sigma$" |
-"$\\sim$" |
-"$t$" |
-"$T$" |
-"$\\tau$" |
-"$\\theta$" |
-"$u$" |
-"$U$" |
-"$v$" |
-"$V$" |
-"$W$" |
-"$x$" |
-"$X$" |
-"$\\xi$" |
-"$y$" |
-"$z$" |
-"$Z$" |
-"(0)" |
-"{0}" |
-"(1)" |
-"[1]" |
-"{-1}" |
-"{1}" |
-"{1/2}" |
-"(2)" |
-"[2]" |
-"{2}" |
-"(3)" |
-"{3}" |
-"(4)" |
-"{4}" |
-"(a)" |
-"{a}" |
+"a" |
+"A" | 
 "\\abs" |
 abstract  |
-"{Acknowledgements}" |
 "\\acute" |
 "\\add" |
 "\\address" |
@@ -432,6 +314,12 @@ aligned  |
 "\\Alph" |
 "\\alpha" |
 "{\\alpha}" |
+alpha "^" (any-'{') |
+alpha "^" braces |
+alpha underscore (any-'{') | 
+alpha underscore (any-'{') "^" (any-'{')| 
+alpha underscore braces |  
+alpha underscore braces "^" braces |
 "\\amalg" |
 "\\and" |
 "\\angle" |
@@ -447,13 +335,12 @@ array  |
 "\\arraycolsep" |
 "\\arrayrulewidth" |
 "\\arraystretch" |
-"{article}" |
 "\\ast" |
 "\\asymp" |
 "\\author" |
 "\\author" braces |
 "\\autoref" braces |
-"(b)" |
+"b" |
 "\\backslash" |
 "\\bar" |
 "\\bar" braces |
@@ -489,8 +376,9 @@ array  |
 "\\bigvee" |
 "\\bigwedge" |
 "\\binname" |
-"\\binom" braces braces | 
 "\\binom" |
+"\\binom" braces braces | 
+bin_op | 
 bmatrix  |
 "\\bmod" |
 "\\boldmath" |
@@ -503,6 +391,7 @@ bmatrix  |
 "\\boxed" |
 "\\boxmaxdepth" |
 braces  |
+braces "^" braces |
 brackets  |
 "\\breve" |
 "\\bslash" |
@@ -513,7 +402,6 @@ brackets  |
 "\\cap" |
 "\\caption" |
 "\\caption" braces |
-"\\caption[loftitle]" |
 cases  |
 "\\cc" |
 "\\cdot" |
@@ -550,13 +438,11 @@ comment |
 "\\contentsline" |
 "\\coprod" |
 "\\copyright" |
-"{corollary}" |
 corollary  |
-"{Corollary}" |
-"\\cos" parens |
-"\\cos" "^" braces |
 "\\cos" |
+"\\cos" "^" braces |
 "\\cosh" |
+"\\cos" parens |
 "\\cot" |
 "\\coth" |
 "\\cov" |
@@ -570,7 +456,6 @@ corollary  |
 "\\dashbox" |
 "\\dashv" |
 "\\date" |
-"\\date{}" |
 "\\date" braces |
 "\\day" |
 "\\dbinom" |
@@ -589,9 +474,9 @@ definition  |
 "\\deg" |
 "\\delimiterfactor" |
 "\\delta" |
-"\\delta" underscore braces | 
-"\\delta " underscore braces |
 "\\Delta" |
+"\\delta " underscore braces |
+"\\delta" underscore braces | 
 description  |
 "\\det" |
 "\\dfrac" |
@@ -604,7 +489,6 @@ displaymath  |
 "\\displaystyle" |
 "\\div" |
 "\\documentclass" |
-"\\documentclass[12pt]{article}" |
 "\\documentclass" braces |
 "\\documentclass" brackets braces |
 "\\documentstyle" |
@@ -622,6 +506,7 @@ displaymath  |
 "\\downarrow" |
 "\\Downarrow" |
 "\\dp" |
+"d" ("x" | "y" | "z") | 
 "\\ell" |
 "\\else" |
 "\\em" |
@@ -633,7 +518,6 @@ displaymath  |
 "\\en" |
 "\\encl" |
 "\\end" |
-"\\end{" |
 "\\end{abstract}" |
 "\\end{acknowledgments}" |
 "\\end" braces |
@@ -646,7 +530,6 @@ enumerate  |
 eqnarray  |
 "\\eqref" |
 "\\eqref" braces |
-"{equation}" |
 "\\equiv" |
 "\\esssup" |
 "\\eta" |
@@ -655,6 +538,7 @@ eqnarray  |
 example  |
 "\\exists" |
 "\\exp" |
+"f" |
 "\\fbox" |
 "\\fboxrule" |
 "\\fboxsep" |
@@ -683,8 +567,8 @@ flushright  |
 "\\footnotetext" |
 "\\footskip" |
 "\\forall" |
+"f" parens |
 "\\frac" |
-"\\frac{1}{2}" |
 "\\frac" braces braces | 
 "\\frace" braces |
 "\\frame" |
@@ -695,6 +579,8 @@ frame  |
 "\\frametitle" braces |
 "\\frown" |
 "\\fussy" |
+"g" |
+"G" |
 "\\gamma" |
 "\\Gamma" |
 gather  |
@@ -714,6 +600,7 @@ gather  |
 "\\hbar" |
 "\\hbox" |
 "\\hbox" braces |
+"\\hdots" |
 "\\hdotsfor" |
 "\\headheight" |
 "\\headsep" |
@@ -724,6 +611,7 @@ gather  |
 "\\hom" |
 "\\hookleftarrow" |
 "\\hookrightarrow" |
+"\\href" braces braces |
 "\\hrulefill" |
 "\\hspace" |
 "\\hspace*" |
@@ -732,6 +620,7 @@ gather  |
 "\\Huge" |
 "\\hyphenation" |
 "(i)" |
+"-i" | 
 "\\idotsint" |
 "\\iff" |
 "\\iffalse" |
@@ -742,7 +631,6 @@ gather  |
 "\\iiiint" |
 "\\iiint" |
 "\\iint" |
-"{ij}" |
 "\\Im" |
 "\\imath" |
 "\\in" |
@@ -753,9 +641,11 @@ gather  |
 "\\indexspace" |
 "\\inf" |
 "\\infty" |
-"{\\infty}" |
 "\\input" |
+"\\input" braces |
 "\\int" |
+integer | 
+"-"? integer ("x"|"y"|"z") |  
 "\\interval" |
 "\\intextsep" |
 "\\iota" |
@@ -769,11 +659,13 @@ itemize  |
 "\\item[text]" |
 "\\jmath" |
 "\\Join" |
+"K" |
 "\\kappa" |
 "\\ker" |
 "\\ket" braces |
 "\\keywords" braces |
 "\\kill" |
+"k" parens |
 "\\l" |
 "\\label" |
 "\\label" braces |
@@ -807,20 +699,18 @@ itemize  |
 "\\leftrightarrow" |
 "\\Leftrightarrow" |
 "\\leftroot" |
-"{lemma}" |
 lemma  |
-"{Lemma}" |
 "\\lemref" |
 "\\leq" |
 "\\let" |
 "\\lfloor" |
 "\\lg" |
 "\\lhd" |
-"\\lim" underscore braces |
 "\\lim" |
 "\\liminf" |
 "\\limits" |
 "\\limsup" |
+"\\lim" underscore braces |
 "\\linebreak" |
 "\\linebreak[n]" |
 "\\linethickness" |
@@ -890,7 +780,6 @@ minipage  |
 "\\multicolumn" |
 multline  |
 "\\multlinegap" |
-"{n}" |
 "\\nabla" |
 "\\natural" |
 "\\ne" |
@@ -992,9 +881,7 @@ pmatrix  |
 "\\prod" |
 proof  |
 prop  |
-"{proposition}" |
 proposition  |
-"{Proposition}" |
 "\\propto" |
 "\\protect" |
 "\\ps" |
@@ -1020,9 +907,7 @@ quote  |
 "\\ref" braces |
 "\\relax" |
 rem  |
-"{remark}" |
 remark  |
-"{Remark}" |
 "\\renewcommand" |
 "\\renewcommand" braces |
 "\\renewenvironment" |
@@ -1073,7 +958,6 @@ remark  |
 "\\setcounter" braces |
 "\\setlength" |
 "\\setlength" braces |
-"\\setlength{\\textheight}" |
 "\\setminus" |
 "\\settowidth" |
 "\\sf" |
@@ -1086,9 +970,8 @@ remark  |
 "\\sim" |
 "\\simeq" |
 "\\sin" |
-"\\sin" parens | 
-
 "\\sinh" |
+"\\sin" parens | 
 "\\skip" |
 "\\sl" |
 "\\sloppy" |
@@ -1130,6 +1013,10 @@ subequations  |
 "\\succ" |
 "\\succeq" |
 "\\sum" |
+"\\sum " underscore braces | 
+"\\sum" underscore braces | 
+"\\sum " underscore braces "^" braces | 
+"\\sum" underscore braces "^" braces |
 "\\sup" |
 "\\supset" |
 "\\supseteq" |
@@ -1167,9 +1054,7 @@ tabular  |
 "\\thanks" |
 thebibliography  |
 "\\theequation" |
-"{theorem}" |
 theorem  |
-"{Theorem}" |
 "\\theoremstyle" |
 "\\theta" |
 "\\Theta" |
@@ -1211,6 +1096,8 @@ titlepage  |
 "\\underline" |
 "\\underline" braces |
 "\\underrightarrow" |
+underscore | 
+underscore braces "^" braces |
 "\\underset" |
 "\\unitlength" |
 "\\unlhd" |
@@ -1266,12 +1153,15 @@ verbatim  |
 "\\widetilde" braces | 
 "\\wp" |
 "\\wr" |
+ws | 
 "\\wt" |
 "(x)" |
+"x" | 
 "\\xdef" |
 "\\xi" |
 "\\Xi" |
 "\\xleftarrow" |
 "\\xrightarrow" |
+"y" | 
 "\\year" |
 "\\zeta" ; }%%
