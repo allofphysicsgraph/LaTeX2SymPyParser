@@ -17,3 +17,7 @@ read_tf_idf:
 get_sample_data:
 	wget https://www.cs.cornell.edu/projects/kddcup/download/hep-th-2003.tar.gz --no-check-certificate
 	tar -xf hep-th-2003.tar.gz
+
+clean:
+	rm tf_idf
+	rm offsets
