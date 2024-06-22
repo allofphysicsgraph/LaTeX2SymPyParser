@@ -287,6 +287,17 @@ bin_op = "+" | "-" | "*" | "/" ;
 ws = " ";
 integer = "0" | [1-9][0]* ; 
 latex = eq | 
+"^" |
+"a" |
+"b" |
+"f" parens |
+"|" |
+"K" |
+"G" |
+"<<" |
+"y" | 
+"f" |
+"A" | 
 "\\sum" underscore braces | 
 "=" | 
 "x" | 
@@ -464,6 +475,7 @@ array  |
 "\\bigvee" |
 "\\bigwedge" |
 "\\binname" |
+"\\binom" braces braces | 
 "\\binom" |
 bmatrix  |
 "\\bmod" |
