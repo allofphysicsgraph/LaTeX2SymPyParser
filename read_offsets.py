@@ -27,4 +27,5 @@ with open("offsets", "r") as f:
         ordered_tokens.append(output[h])
 
 ordered_tokens = [x for x in ordered_tokens if x.strip()]
-print(ordered_tokens)
+for tok in ordered_tokens:
+    print(tok)

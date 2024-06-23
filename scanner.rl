@@ -21,7 +21,22 @@
 
 char temp_buffer[10024];
 #define CASES_MAX_SIZE 2000
+#define SPLIT_MAX_SIZE 2000
+#define ALIGN_MAX_SIZE 2000
+#define EQUATION_MAX_SIZE 2000
+#define BMATRIX_MAX_SIZE 2000
+#define PMATRIX_MAX_SIZE 2000
+#define BRACKETS_MAX_SIZE 2000
+#define VERBATIM_MAX_SIZE 2000
+char brackets_temp[BRACKETS_MAX_SIZE];
 char cases_temp[CASES_MAX_SIZE];
+char split_temp[SPLIT_MAX_SIZE];
+char align_temp[SPLIT_MAX_SIZE];
+char equation_temp[SPLIT_MAX_SIZE];
+char bmatrix_temp[SPLIT_MAX_SIZE];
+char pmatrix_temp[SPLIT_MAX_SIZE];
+char verbatim_temp[VERBATIM_MAX_SIZE];
+
 
 int n;
 int in_size = 0;
@@ -52,11 +67,12 @@ if ((te - ts) < 1000) {
       size_t i = 0;
       XXH64_canonicalFromHash(&dst, test_hash);
       for (i = 0; i < 8; i++) {
-        ////write_to_file("offsets","%02x",dst.digest[i]);
+        fprintf(hash_test,"%02x",dst.digest[i]);
       }
-        ////write_to_file("offsets", " %d  %d\n", offset, length);
+      fprintf(hash_test, " %d  %d\n", offset, length);
 memset(cases_temp,'\0',CASES_MAX_SIZE);
 strncpy(cases_temp,&in[ts-in+14],te-ts-29);
+printf("%s",cases_temp);
 scanner(cases_temp,hash_test,te-ts-29,filename);
 }};
 
@@ -75,9 +91,9 @@ if ((te - ts) < 1000) {
       size_t i = 0;
       XXH64_canonicalFromHash(&dst, test_hash);
       for (i = 0; i < 8; i++) {
-        ////write_to_file("offsets","%02x",dst.digest[i]);
+        fprintf(hash_test,"%02x",dst.digest[i]);
       }
-        ////write_to_file("offsets", " %d  %d\n", offset, length);
+      fprintf(hash_test, " %d  %d\n", offset, length);
 memset(temp_buffer,'\0',10024);
 //strncpy(temp_buffer,&in[ts-in+2],te-ts-1);
 //scanner(temp_buffer,hash_test,te-ts-1,filename);
@@ -100,12 +116,11 @@ if ((te - ts) < 1000) {
       size_t i = 0;
       XXH64_canonicalFromHash(&dst, test_hash);
       for (i = 0; i < 8; i++) {
-        ////write_to_file("offsets","%02x",dst.digest[i]);
+        fprintf(hash_test,"%02x",dst.digest[i]);
       }
-        ////write_to_file("offsets", " %d  %d\n", offset, length);
+        fprintf(hash_test, " %d  %d\n", offset, length);
+ 
 memset(temp_buffer,'\0',10024);
-//strncpy(temp_buffer,&in[ts-in+2],te-ts-1);
-//scanner(temp_buffer,hash_test,te-ts-1,filename);
 strncpy(temp_buffer,&in[ts-in+17],te-ts-32);
 scanner(temp_buffer,hash_test,te-ts-32,filename);
 }};
@@ -124,12 +139,34 @@ if ((te - ts) < 1000) {
       size_t i = 0;
       XXH64_canonicalFromHash(&dst, test_hash);
       for (i = 0; i < 8; i++) {
-        ////write_to_file("offsets","%02x",dst.digest[i]);
+        fprintf(hash_test,"%02x",dst.digest[i]);
       }
-        ////write_to_file("offsets", " %d  %d\n", offset, length);
+      fprintf(hash_test, " %d  %d\n", offset, length);
 memset(temp_buffer,'\0',10024);
 strncpy(temp_buffer,&in[ts-in+14],te-ts-29);
 scanner(temp_buffer,hash_test,te-ts-29,filename);
+}};
+
+brackets => {
+if ((te - ts) < 1000) {
+  XXH64_canonical_t dst;
+  char temp[te - ts + 1];
+  memset(temp, '\0', te - ts + 1);
+  int offset = ts - in;
+  int length = te - ts;
+  /* hash original token */
+  strncpy(temp, &in[offset], length);
+  XXH64_hash_t test_hash = XXH64(temp, length, 0);
+  add_token(test_hash, temp, length, filename);
+      size_t i = 0;
+      XXH64_canonicalFromHash(&dst, test_hash);
+      for (i = 0; i < 8; i++) {
+        fprintf(hash_test,"%02x",dst.digest[i]);
+      }
+      fprintf(hash_test, " %d  %d\n", offset, length);
+memset(brackets_temp,'\0',BRACKETS_MAX_SIZE);
+strncpy(brackets_temp,&in[ts-in+1],te-ts-1);
+scanner(brackets_temp,hash_test,te-ts-1,filename);
 }};
 
 split => {
@@ -146,12 +183,12 @@ if ((te - ts) < 1000) {
       size_t i = 0;
       XXH64_canonicalFromHash(&dst, test_hash);
       for (i = 0; i < 8; i++) {
-        ////write_to_file("offsets","%02x",dst.digest[i]);
+        fprintf(hash_test,"%02x",dst.digest[i]);
       }
-        ////write_to_file("offsets", " %d  %d\n", offset, length);
-memset(temp_buffer,'\0',10024);
-strncpy(temp_buffer,&in[ts-in+14],te-ts-29);
-scanner(temp_buffer,hash_test,te-ts-29,filename);
+      fprintf(hash_test, " %d  %d\n", offset, length);
+memset(split_temp,'\0',SPLIT_MAX_SIZE);
+strncpy(split_temp,&in[ts-in+14],te-ts-29);
+scanner(split_temp,hash_test,te-ts-29,filename);
 }};
 
 pmatrix => {
@@ -168,9 +205,9 @@ if ((te - ts) < 1000) {
       size_t i = 0;
       XXH64_canonicalFromHash(&dst, test_hash);
       for (i = 0; i < 8; i++) {
-        ////write_to_file("offsets","%02x",dst.digest[i]);
+        fprintf(hash_test,"%02x",dst.digest[i]);
       }
-        ////write_to_file("offsets", " %d  %d\n", offset, length);
+      fprintf(hash_test, " %d  %d\n", offset, length);
 memset(temp_buffer,'\0',10024);
 strncpy(temp_buffer,&in[ts-in+16],te-ts-31);
 scanner(temp_buffer,hash_test,te-ts-31,filename);
@@ -190,9 +227,9 @@ if ((te - ts) < 1000) {
       size_t i = 0;
       XXH64_canonicalFromHash(&dst, test_hash);
       for (i = 0; i < 8; i++) {
-        ////write_to_file("offsets","%02x",dst.digest[i]);
+        fprintf(hash_test,"%02x",dst.digest[i]);
       }
-        ////write_to_file("offsets", " %d  %d\n", offset, length);
+      fprintf(hash_test, " %d  %d\n", offset, length);
 memset(temp_buffer,'\0',10024);
 strncpy(temp_buffer,&in[ts-in+16],te-ts-31);
 scanner(temp_buffer,hash_test,te-ts-31,filename);

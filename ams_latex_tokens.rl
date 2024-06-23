@@ -277,6 +277,10 @@ right_bracket = ']' @{n--; };
 bracket_body = any - (left_bracket|right_bracket);
 brackets = '[' @{n=0;} (left_bracket|right_bracket|bracket_body)* :> ']' when{!n};
 
+math_mode_begin = '\\[' @{n++; };
+math_mode_end = '\\]' @{n--; }; 
+math_mode_body = any+ - (math_mode_begin|math_mode_end);
+math_mode = '\\[' @{n=1;}  (math_mode_begin|math_mode_end|math_mode_body)*    math_mode_end  :> any when{!n};
 
 left_parens = '(' @{n++;};
 right_parens = ')' @{n--; };
@@ -350,12 +354,14 @@ Italic_Greek =
 
 
 latex = eq | 
+equation |
+math_mode |
 Italic_Greek |
 func_normal |
 func_normal braces |
 func_normal parens |
 summation |
-integral |
+"-"? integral |
 "W" | "u"|"v"|"w" | "n"|
 parens "^" (any-'{') | 
 parens "^" braces  |
@@ -370,8 +376,14 @@ parens "^" braces  |
 "|" |
 [ ]+ "&" [ ]+ |
 "$" (any-"$"){1,80} "$"  | 
+"e" "^" braces |
+"\\," | 
+"," |
 "a" |
-"A" | 
+"A" |
+"G" parens |
+"g" parens |
+"I" parens | 
 "\\abs" |
 abstract  |
 "\\acute" |
@@ -743,6 +755,8 @@ itemize  |
 "\\le" |
 "\\leadsto" |
 "\\left" |
+"\\left" parens |
+"-"? "\\operatorname" braces |
 "\\left*" |
 "\\leftarrow" |
 "\\Leftarrow" |
@@ -814,6 +828,7 @@ math |
 "\\mathinner" |
 "\\mathop" |
 "\\mathrm" braces |
+"\\mathrm{d}t" |
 matrix  |
 "\\max" |
 "\\maxdepth" |
@@ -1199,4 +1214,6 @@ ws |
 "\\xrightarrow" |
 "y" | 
 "\\year" |
-"\\zeta" ; }%%
+"\\zeta" |
+"\\zeta" "^" braces; 
+}%%
