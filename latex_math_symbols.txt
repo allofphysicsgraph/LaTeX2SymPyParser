@@ -1,535 +1,533 @@
-Math Mode Accents=
-\hat{a}
-\check{a}
-\tilde{a}
-\acute{a}
-\grave{a}
-\dot{a}
-\ddot{a}
-\breve{a}
-\bar{a}
-\vec{a}
-\widehat{A}
-\widetilde{A}
+Math_Mode_Accents=
+"\\hat{a}" |
+"\\check{a}" |
+"\\tilde{a}" |
+"\\acute{a}" |
+"\\grave{a}" |
+"\\dot{a}" |
+"\\ddot{a}" |
+"\\breve{a}" |
+"\\bar{a}" |
+"\\vec{a}" |
+"\\widehat{A}" |
+"\\widetilde{A}";
 
 
-Lowercase Greek Letters=
-\alpha
-\theta
-\upsilon
-\beta
-\vartheta
-\pi
-\phi
-\gamma
-\iota
-\varpi
-\varphi
-\delta
-\kappa
-\rho
-\chi
-\epsilon
-\lambda
-\varrho
-\psi
-\varepsilon
-\mu
-\sigma
-\omega
-\zeta
-\nu
-\varsigma
-\eta
-\xi
-\tau
+Lowercase_Greek_Letters=
+"\\alpha" |
+"\\theta" |
+"\\upsilon" |
+"\\beta" |
+"\\vartheta" |
+"\\pi" |
+"\\phi" |
+"\\gamma" |
+"\\iota" |
+"\\varpi" |
+"\\varphi" |
+"\\delta" |
+"\\kappa" |
+"\\rho" |
+"\\chi" |
+"\\epsilon" |
+"\\lambda" |
+"\\varrho" |
+"\\psi" |
+"\\varepsilon" |
+"\\mu" |
+"\\sigma" |
+"\\omega" |
+"\\zeta" |
+"\\nu" |
+"\\varsigma" |
+"\\eta" |
+"\\xi" |
+"\\tau";
+
+Uppercase_Greek_Letters=
+"\\Gamma" |
+"\\Lambda" |
+"\\Sigma" |
+"\\Psi" |
+"\\Delta" |
+"\\Xi" |
+"\\Upsilon" |
+"\\Omega" |
+"\\Theta" |
+"\\Pi" |
+"\\Phi";
 
 
-Uppercase Greek Letters=
-\Gamma
-\Lambda
-\Sigma
-\Psi
-\Delta
-\Xi
-\Upsilon
-\Omega
-\Theta
-\Pi
-\Phi
-
-
-Binary Relations=
-\leq
-\le
-\geq
-\ge
-\equiv
-\ll
-\gg
-\doteq
-\prec
-\succ
-\sim
-\preceq
-\succeq
-\simeq
-\subset
-\supset
-\approx
-\subseteq
-\supseteq
-\cong
-\sqsubset
-\sqsupset
-\Join
-\sqsubseteq
-\sqsupseteq
-\bowtie
-\in
-\ni
-\owns
-\propto
-\vdash
-\dashv
-\models
-\mid
-\parallel
-\perp
-\smile
-\frown
-\asymp
-\notin
-\neq
-\ne
-
+Binary_Relations=
+"\\leq" |
+"\\le" |
+"\\geq" |
+"\\ge" |
+"\\equiv" |
+"\\ll" |
+"\\gg" |
+"\\doteq" |
+"\\prec" |
+"\\succ" |
+"\\sim" |
+"\\preceq" |
+"\\succeq" |
+"\\simeq" |
+"\\subset" |
+"\\supset" |
+"\\approx" |
+"\\subseteq" |
+"\\supseteq" |
+"\\cong" |
+"\\sqsubset" |
+"\\sqsupset" |
+"\\Join" |
+"\\sqsubseteq" |
+"\\sqsupseteq" |
+"\\bowtie" |
+"\\in" |
+"\\ni" |
+"\\owns" |
+"\\propto" |
+"\\vdash" |
+"\\dashv" |
+"\\models" |
+"\\mid" |
+"\\parallel" |
+"\\perp" |
+"\\smile" |
+"\\frown" |
+"\\asymp" |
+"\\notin" |
+"\\neq" |
+"\\ne";
 
 Binary Operators=
+"+" |
+"-" |
+"/" |
+"−" |
+"\\mp" |
+"\\pm" |
+"\\triangleleft" |
+"\\cdot" |
+"\\div" |
+"\\triangleright" |
+"\\times" |
+"\\" |
+"\\setminus" |
+"\\star" |
+"\\cup" |
+"\\cap" |
+"\\ast" |
+"\\sqcup" |
+"\\sqcap" |
+"\\circ" |
+"\\vee" |
+"\\lor" |
+"\\wedge" |
+"\\land" |
+"\\bullet" |
+"\\oplus" |
+"\\ominus" |
+"\\diamond" |
+"\\odot" |
+"\\oslash" |
+"\\uplus" |
+"\\otimes" |
+"\\bigcirc" |
+"\\amalg" |
+"\\bigtriangleup" |
+"\\bigtriangledown" |
+"\\dagger" |
+"\\lhd" |
+"\\rhd" |
+"\\ddagger" |
+"\\unlhd" |
+"\\unrhd" |
+"\\wr";
 
-       +   +                      −        -
-       ±   \pm                    ∓        \mp                      /    \triangleleft
-\cdot
-\div
-\triangleright
-\times
-\
-\setminus
-\star
-\cup
-\cap
-\ast
-\sqcup
-\sqcap
-\circ
-\vee
-\lor
-\wedge
-\land
-\bullet
-\oplus
-\ominus
-\diamond
-\odot
-\oslash
-\uplus
-\otimes
-\bigcirc
-\amalg
-\bigtriangleup
-\bigtriangledown
-\dagger
-\lhd
-\rhd
-\ddagger
 
-\unlhd
-\unrhd
-\wr
-
-                                       BIG Operators=
-\sum
-\bigcup
-\bigvee
-\bigoplus
-\prod
-\bigcap
-\bigwedge
-\bigotimes
-\coprod
-\bigsqcup
-\bigodot
-\int
-\oint
-\biguplus
+BIG_Operators=
+"\\sum" |
+"\\bigcup" |
+"\\bigvee" |
+"\\bigoplus" |
+"\\prod" |
+"\\bigcap" |
+"\\bigwedge" |
+"\\bigotimes" |
+"\\coprod" |
+"\\bigsqcup" |
+"\\bigodot" |
+"\\int" |
+"\\oint" |
+"\\biguplus";
 
 Arrows=
-\leftarrow
-\gets
-\longleftarrow
-\uparrow
-\rightarrow
-\to
-\longrightarrow
-\downarrow
-\leftrightarrow
-\longleftrightarrow
-\updownarrow
-\Leftarrow
-\Longleftarrow
-\Uparrow
-\Rightarrow
-\Longrightarrow
-\Downarrow
-\Leftrightarrow
-\Longleftrightarrow
-\Updownarrow
-\mapsto
-\longmapsto
-\nearrow
-\hookleftarrow
-\hookrightarrow
-\searrow
-\leftharpoonup
-\rightharpoonup
-\swarrow
-\leftharpoondown
-\rightharpoondown
-\nwarrow
-\rightleftharpoons
-\iff
-\leadsto
+"\\leftarrow" |
+"\\gets" |
+"\\longleftarrow" |
+"\\uparrow" |
+"\\rightarrow" |
+"\\to" |
+"\\longrightarrow" |
+"\\downarrow" |
+"\\leftrightarrow" |
+"\\longleftrightarrow" |
+"\\updownarrow" |
+"\\Leftarrow" |
+"\\Longleftarrow" |
+"\\Uparrow" |
+"\\Rightarrow" |
+"\\Longrightarrow" |
+"\\Downarrow" |
+"\\Leftrightarrow" |
+"\\Longleftrightarrow" |
+"\\Updownarrow" |
+"\\mapsto" |
+"\\longmapsto" |
+"\\nearrow" |
+"\\hookleftarrow" |
+"\\hookrightarrow" |
+"\\searrow" |
+"\\leftharpoonup" |
+"\\rightharpoonup" |
+"\\swarrow" |
+"\\leftharpoondown" |
+"\\rightharpoondown" |
+"\\nwarrow" |
+"\\rightleftharpoons" |
+"\\iff" |
+"\\leadsto";
+
 
 Delimiters=
-\uparrow
-\Uparrow
-\lbrack
-\rbrack
-\downarrow
-\Downarrow
-\{
-\lbrace
-\}
-\rbrace
-\updownarrow
-\Updownarrow
-\langle
-\rangle
-\vert
-\|
-\Vert
-\lfloor
-\rfloor
-\lceil
-\rceil
-\
-\backslash
+"\\uparrow" |
+"\\Uparrow" |
+"\\lbrack" |
+"\\rbrack" |
+"\\downarrow" |
+"\\Downarrow" |
+"\\{" |
+"\\lbrace" |
+"\\}" |
+"\\rbrace" |
+"\\updownarrow" |
+"\\Updownarrow" |
+"\\langle" |
+"\\rangle" |
+"\\vert" |
+"\\|" |
+"\\Vert" |
+"\\lfloor" |
+"\\rfloor" |
+"\\lceil" |
+"\\rceil" |
+"\\" |
+"\\backslash"; 
+
+Large_Delimiters=
+"\\lgroup" |
+"\\rgroup" |
+"\\lmoustache" |
+"\\rmoustache" |
+"\\arrowvert" |
+"\\Arrowvert" |
+"\\bracevert;" 
+
+Miscellaneous_Symbols=
+"\\dots" |
+"\\cdots" |
+"\\vdots" |
+"\\ddots" |
+"\\hbar" |
+"\\imath" |
+"\\jmath" |
+"\\ell" |
+"\\Re" |
+"\\Im" |
+"\\aleph" |
+"\\wp" |
+"\\forall" |
+"\\exists" |
+"\\mho" |
+"\\partial" |
+"\\prime" |
+"\\emptyset" |
+"\\infty" |
+"\\nabla" |
+"\\triangle" |
+"\\Box" |
+"\\Diamond" |
+"\\bot" |
+"\\top" |
+"\\angle" |
+"\\surd" |
+"\\diamondsuit" |
+"\\heartsuit" |
+"\\clubsuit" |
+"\\spadesuit" |
+"\\neg" |
+"\\lnot" |
+"\\flat" |
+"\\" |
+"\\natural" |
+"\\sharp;" |
+"\" |
+
+Non_Mathematical_Symbols=
+"\\dag" |
+"\\\S" |
+"\\\copyright" |
+"\\\ddag" |
+"\\\P" |
+"\\\pounds"; 
+
+AMS_Delimiters=
+"\\\ulcorner" |
+"\\\urcorner" |
+"\\\llcorner" |
+"\\\lrcorner"; 
+
+AMS_Greek_and_Hebrew=
+"\\\digamma" |
+"\\\varkappa" |
+"\\\beth" |
+"\\\daleth" |
+"\\\gimel"; 
 
 
-Large Delimiters=
-\lgroup
-\rgroup
-\lmoustache
-\rmoustache
-\arrowvert
-\Arrowvert
-\bracevert
+AMS_Binary_Relations=
+"\\lessdot" |
+"\\gtrdot" |
+"\\doteqdot" |
+"\\Doteq" |
+"\\leqslant" |
+"\\geqslant" |
+"\\risingdotseq" |
+"\\eqslantless" |
+"\\eqslantgtr" |
+"\\fallingdotseq" |
+"\\leqq" |
+"\\geqq" |
+"\\eqcirc" |
+"\\lll" |
+"\\llless" |
+"\\ggg" |
+"\\gggtr" |
+"\\circeq" |
+"\\lesssim" |
+"\\gtrsim" |
+"\\triangleq" |
+"\\lessapprox" |
+"\\gtrapprox" |
+"\\bumpeq" |
+"\\lessgtr" |
+"\\gtrless" |
+"\\Bumpeq" |
+"\\lesseqgtr" |
+"\\gtreqless" |
+"\\thicksim" |
+"\\lesseqqgtr" |
+"\\gtreqqless" |
+"\\thickapprox" |
+"\\preccurlyeq" |
+"\\succcurlyeq" |
+"\\approxeq" |
+"\\curlyeqprec" |
+"\\curlyeqsucc" |
+"\\backsim" |
+"\\precsim" |
+"\\succsim" |
+"\\backsimeq" |
+"\\precapprox" |
+"\\succapprox" |
+"\\vDash" |
+"\\subseteqq" |
+"\\supseteqq" |
+"\\Vdash" |
+"\\Subset" |
+"\\Supset" |
+"\\Vvdash" |
+"\\sqsubset" |
+"\\sqsupset" |
+"\\backepsilon" |
+"\\therefore" |
+"\\because" |
+"\\varpropto" |
+"\\shortmid" |
+"\\shortparallel" |
+"\\between" |
+"\\smallsmile" |
+"\\smallfrown" |
+"\\pitchfork" |
+"\\vartriangleleft" |
+"\\vartriangleright" |
+"\\blacktriangleleft" |
+"\\trianglelefteq" |
+"\\trianglerighteq" |
+"\\blacktriangleright";
 
+AMS_Arrows=
+"\\dashleftarrow" |
+"\\dashrightarrow" |
+"\\multimap" |
+"\\leftleftarrows" |
+"\\rightrightarrows" |
+"\\upuparrows" |
+"\\leftrightarrows" |
+"\\rightleftarrows" |
+"\\downdownarrows" |
+"\\Lleftarrow" |
+"\\Rrightarrow" |
+"\\upharpoonleft" |
+"\\twoheadleftarrow" |
+"\\twoheadrightarrow" |
+"\\upharpoonright" |
+"\\leftarrowtail" |
+"\\rightarrowtail" |
+"\\downharpoonleft" |
+"\\leftrightharpoons" |
+"\\rightleftharpoons" |
+"\\downharpoonright" |
+"\\Lsh" |
+"\\Rsh" |
+"\\rightsquigarrow" |
+"\\" |
+"\\looparrowleft" |
+"\\looparrowright" |
+"\\leftrightsquigarrow" |
+"\\curvearrowleft" |
+"\\curvearrowright" |
+"\\circlearrowleft" |
+"\\circlearrowright"; 
 
-Miscellaneous Symbols=
-\dots
-\cdots
-\vdots
-\ddots
-\hbar
-\imath
-\jmath
-\ell
-\Re
-\Im
-\aleph
-\wp
-\forall
-\exists
-\mho
-\partial
-\prime
-\emptyset
-\infty
-\nabla
-\triangle
-\Box
-\Diamond
-\bot
-\top
-\angle
-\surd
-\diamondsuit
-\heartsuit
-\clubsuit
-\spadesuit
-\neg
-\lnot
-\flat
-\
-\natural
-\sharp
+AMS_Negated_Binary_Relations_and_Arrows=
+"\\nless" |
+"\\ngtr" |
+"\\varsubsetneqq" |
+"\\lneq" |
+"\\gneq" |
+"\\varsupsetneqq" |
+"\\nleq" |
+"\\ngeq" |
+"\\nsubseteqq" |
+"\\nleqslant" |
+"\\ngeqslant" |
+"\\nsupseteqq" |
+"\\lneqq" |
+"\\gneqq" |
+"\\nmid" |
+"\\lvertneqq" |
+"\\gvertneqq" |
+"\\nparallel" |
+"\\nleqq" |
+"\\ngeqq" |
+"\\nshortmid" |
+"\\lnsim" |
+"\\gnsim" |
+"\\nshortparallel" |
+"\\lnapprox" |
+"\\gnapprox" |
+"\\nsim" |
+"\\nprec" |
+"\\nsucc" |
+"\\ncong" |
+"\\npreceq" |
+"\\nsucceq" |
+"\\nvdash" |
+"\\precneqq" |
+"\\succneqq" |
+"\\nvDash" |
+"\\precnsim" |
+"\\succnsim" |
+"\\nVdash" |
+"\\precnapprox" |
+"\\succnapprox" |
+"\\nVDash" |
+"\\subsetneq" |
+"\\supsetneq" |
+"\\ntriangleleft" |
+"\\varsubsetneq" |
+"\\varsupsetneq" |
+"\\ntriangleright" |
+"\\nsubseteq" |
+"\\nsupseteq" |
+"\\ntrianglelefteq" |
+"\\subsetneqq" |
+"\\supsetneqq" |
+"\\ntrianglerighteq" |
+"\\nleftarrow" |
+"\\nrightarrow" |
+"\\nleftrightarrow" |
+"\\nLeftarrow" |
+"\\nRightarrow" |
+"\\nLeftrightarrow";
 
+AMS_Binary_Operators= 
+"\\dotplus" |
+"\\centerdot" |
+"\\intercal" |
+"\\ltimes" |
+"\\rtimes" |
+"\\divideontimes" |
+"\\Cup" |
+"\\doublecup" |
+"\\Cap" |
+"\\doublecap" |
+"\\smallsetminus" |
+"\\veebar" |
+"\\barwedge" |
+"\\doublebarwedge" |
+"\\boxplus" |
+"\\boxminus" |
+"\\circleddash" |
+"\\boxtimes" |
+"\\boxdot" |
+"\\circledcirc" |
+"\\leftthreetimes" |
+"\\rightthreetimes" |
+"\\circledast" |
+"\\curlyvee" |
+"\\curlywedge";
 
-Non-Mathematical Symbols=
-\dag
-\S
-\copyright
-\ddag
-\P
-\pounds
+AMS_Miscellaneous=
+"\\hbar" |
+"\\hslash" |
+"\\Bbbk" |
+"\\square" |
+"\\blacksquare" |
+"\\circledS" |
+"\\vartriangle" |
+"\\blacktriangle" |
+"\\complement" |
+"\\triangledown" |
+"\\blacktriangledown" |
+"\\Game" |
+"\\lozenge" |
+"\\blacklozenge" |
+"\\bigstar" |
+"\\angle" |
+"\\measuredangle" |
+"\\sphericalangle" |
+"\\diagup" |
+"\\diagdown" |
+"\\backprime" |
+"\\nexists" |
+"\\Finv" |
+"\\varnothing" |
+"\\eth" |
+"\\mho" |
+"\";
 
-
-
-AMS Delimiters=
-\ulcorner
-\urcorner
-\llcorner
-\lrcorner
-
-AMS Greek and Hebrew=
-\digamma
-\varkappa
-\beth
-\daleth
-\gimel
-
-
-
-AMS Binary Relations=
-
-\lessdot
-\gtrdot
-\doteqdot
-\Doteq
-\leqslant
-\geqslant
-\risingdotseq
-\eqslantless
-\eqslantgtr
-\fallingdotseq
-\leqq
-\geqq
-\eqcirc
-\lll
-\llless
-\ggg
-\gggtr
-\circeq
-\lesssim
-\gtrsim
-\triangleq
-\lessapprox
-\gtrapprox
-\bumpeq
-\lessgtr
-\gtrless
-\Bumpeq
-\lesseqgtr
-\gtreqless
-\thicksim
-\lesseqqgtr
-\gtreqqless
-\thickapprox
-\preccurlyeq
-\succcurlyeq
-\approxeq
-\curlyeqprec
-\curlyeqsucc
-\backsim
-\precsim
-\succsim
-\backsimeq
-\precapprox
-\succapprox
-\vDash
-\subseteqq
-\supseteqq
-\Vdash
-\Subset
-\Supset
-\Vvdash
-\sqsubset
-\sqsupset
-\backepsilon
-\therefore
-\because
-\varpropto
-\shortmid
-\shortparallel
-\between
-\smallsmile
-\smallfrown
-\pitchfork
-\vartriangleleft
-\vartriangleright
-\blacktriangleleft
-\trianglelefteq
-\trianglerighteq
-\blacktriangleright
-
-AMS Arrows=
-\dashleftarrow
-\dashrightarrow
-\multimap
-\leftleftarrows
-\rightrightarrows
-\upuparrows
-\leftrightarrows
-\rightleftarrows
-\downdownarrows
-\Lleftarrow
-\Rrightarrow
-\upharpoonleft
-\twoheadleftarrow
-\twoheadrightarrow
-\upharpoonright
-\leftarrowtail
-\rightarrowtail
-\downharpoonleft
-\leftrightharpoons
-\rightleftharpoons
-\downharpoonright
-\Lsh
-\Rsh
-\rightsquigarrow
-\
-\looparrowleft
-\looparrowright
-\leftrightsquigarrow
-\curvearrowleft
-\curvearrowright
-\circlearrowleft
-\circlearrowright
-
-AMS Negated Binary Relations and Arrows=
-\nless
-\ngtr
-\varsubsetneqq
-\lneq
-\gneq
-\varsupsetneqq
-\nleq
-\ngeq
-\nsubseteqq
-\nleqslant
-\ngeqslant
-\nsupseteqq
-\lneqq
-\gneqq
-\nmid
-\lvertneqq
-\gvertneqq
-\nparallel
-\nleqq
-\ngeqq
-\nshortmid
-\lnsim
-\gnsim
-\nshortparallel
-\lnapprox
-\gnapprox
-\nsim
-\nprec
-\nsucc
-\ncong
-\npreceq
-\nsucceq
-\nvdash
-\precneqq
-\succneqq
-\nvDash
-\precnsim
-\succnsim
-\nVdash
-\precnapprox
-\succnapprox
-\nVDash
-\subsetneq
-\supsetneq
-\ntriangleleft
-\varsubsetneq
-\varsupsetneq
-\ntriangleright
-\nsubseteq
-\nsupseteq
-\ntrianglelefteq
-\subsetneqq
-\supsetneqq
-\ntrianglerighteq
-\nleftarrow
-\nrightarrow
-\nleftrightarrow
-\nLeftarrow
-\nRightarrow
-\nLeftrightarrow
-
-AMS Binary Operators=
-\dotplus
-\centerdot
-\intercal
-\ltimes
-\rtimes
-\divideontimes
-\Cup
-\doublecup
-\Cap
-\doublecap
-\smallsetminus
-\veebar
-\barwedge
-\doublebarwedge
-\boxplus
-\boxminus
-\circleddash
-\boxtimes
-\boxdot
-\circledcirc
-\leftthreetimes
-\rightthreetimes
-\circledast
-\curlyvee
-\curlywedge
-
-AMS Miscellaneous=
-\hbar
-\hslash
-\Bbbk
-\square
-\blacksquare
-\circledS
-\vartriangle
-\blacktriangle
-\complement
-\triangledown
-\blacktriangledown
-\Game
-\lozenge
-\blacklozenge
-\bigstar
-\angle
-\measuredangle
-\sphericalangle
-\diagup
-\diagdown
-\backprime
-\nexists
-\Finv
-\varnothing
-\eth
-\mho
-
-Math Alphabets=
-\mathrm{ABCdef}
-\mathit{ABCdef}
-\mathnormal{ABCdef}
-\mathcal{ABC}
-\mathcal{ABC}
-\mathcal{ABC}
-\mathscr{ABC}
-\mathfrak{ABCdef}
-\mathbb{ABC}
+Math_Alphabets=
+"\\mathrm{ABCdef}" |
+"\\mathit{ABCdef}" |
+"\\mathnormal{ABCdef}" |
+"\\mathcal{ABC}" |
+"\\mathcal{ABC}" |
+"\\mathcal{ABC}" |
+"\\mathscr{ABC}" |
+"\\mathfrak{ABCdef}" |
+"\\mathbb{ABC};" 
