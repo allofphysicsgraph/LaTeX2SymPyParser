@@ -870,15 +870,16 @@ AMS_Miscellaneous=
 "\\mho" ;
 
 Math_Alphabets=
-"\\mathrm{ABCdef}" |
-"\\mathit{ABCdef}" |
-"\\mathnormal{ABCdef}" |
-"\\mathcal{ABC}" |
-"\\mathcal{ABC}" |
-"\\mathcal{ABC}" |
-"\\mathscr{ABC}" |
-"\\mathfrak{ABCdef}" |
-"\\mathbb{ABC}"; 
+"\\mathbb" braces |
+"\\mathbf" braces |
+"\\mathcal" braces |
+"\\mathfrak" braces|
+"\\mathit" braces|
+"\\mathnormal" braces|
+"\\mathrm" braces |
+"\\mathscr" braces|
+"\\mathsf" braces|
+"\\mathbb" braces; 
 
 
 latex = eq | 
@@ -1100,11 +1101,7 @@ lemma  |
 list |
 lstlisting  |
 math |
-"\\mathbb" braces |
-"\\mathbf" |
-"\\mathbf" braces |
-"\\mathcal" |
-"\\mathcal" braces |
+
 "\\mathinner" |
 math_mode |
 "\\mathop" |
