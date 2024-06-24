@@ -352,110 +352,609 @@ Italic_Greek =
 '\\varPsi' |
 '\\varOmega' ;
 
+Math_Mode_Accents=
+"\\hat{a}" |
+"\\check{a}" |
+"\\tilde{a}" |
+"\\acute{a}" |
+"\\grave{a}" |
+"\\dot{a}" |
+"\\ddot{a}" |
+"\\breve{a}" |
+"\\bar{a}" |
+"\\vec{a}" |
+"\\widehat{A}" |
+"\\widetilde{A}";
+
+
+Lowercase_Greek_Letters=
+"\\alpha" |
+"\\theta" |
+"\\upsilon" |
+"\\beta" |
+"\\vartheta" |
+"\\pi" |
+"\\phi" |
+"\\gamma" |
+"\\iota" |
+"\\varpi" |
+"\\varphi" |
+"\\delta" |
+"\\kappa" |
+"\\rho" |
+"\\chi" |
+"\\epsilon" |
+"\\lambda" |
+"\\varrho" |
+"\\psi" |
+"\\varepsilon" |
+"\\mu" |
+"\\sigma" |
+"\\omega" |
+"\\zeta" |
+"\\nu" |
+"\\varsigma" |
+"\\eta" |
+"\\xi" |
+"\\tau";
+
+Uppercase_Greek_Letters=
+"\\Gamma" |
+"\\Lambda" |
+"\\Sigma" |
+"\\Psi" |
+"\\Delta" |
+"\\Xi" |
+"\\Upsilon" |
+"\\Omega" |
+"\\Theta" |
+"\\Pi" |
+"\\Phi";
+
+
+Binary_Relations=
+"\\leq" |
+"\\le" |
+"\\geq" |
+"\\ge" |
+"\\equiv" |
+"\\ll" |
+"\\gg" |
+"\\doteq" |
+"\\prec" |
+"\\succ" |
+"\\sim" |
+"\\preceq" |
+"\\succeq" |
+"\\simeq" |
+"\\subset" |
+"\\supset" |
+"\\approx" |
+"\\subseteq" |
+"\\supseteq" |
+"\\cong" |
+"\\sqsubset" |
+"\\sqsupset" |
+"\\Join" |
+"\\sqsubseteq" |
+"\\sqsupseteq" |
+"\\bowtie" |
+"\\in" |
+"\\ni" |
+"\\owns" |
+"\\propto" |
+"\\vdash" |
+"\\dashv" |
+"\\models" |
+"\\mid" |
+"\\parallel" |
+"\\perp" |
+"\\smile" |
+"\\frown" |
+"\\asymp" |
+"\\notin" |
+"\\neq" |
+"\\ne";
+
+Binary_Operators=
+"+" |
+"-" |
+"/" |
+"−" |
+"\\mp" |
+"\\pm" |
+"\\triangleleft" |
+"\\cdot" |
+"\\div" |
+"\\triangleright" |
+"\\times" |
+"\\" |
+"\\setminus" |
+"\\star" |
+"\\cup" |
+"\\cap" |
+"\\ast" |
+"\\sqcup" |
+"\\sqcap" |
+"\\circ" |
+"\\vee" |
+"\\lor" |
+"\\wedge" |
+"\\land" |
+"\\bullet" |
+"\\oplus" |
+"\\ominus" |
+"\\diamond" |
+"\\odot" |
+"\\oslash" |
+"\\uplus" |
+"\\otimes" |
+"\\bigcirc" |
+"\\amalg" |
+"\\bigtriangleup" |
+"\\bigtriangledown" |
+"\\dagger" |
+"\\lhd" |
+"\\rhd" |
+"\\ddagger" |
+"\\unlhd" |
+"\\unrhd" |
+"\\wr";
+
+
+BIG_Operators=
+"\\sum" |
+"\\bigcup" |
+"\\bigvee" |
+"\\bigoplus" |
+"\\prod" |
+"\\bigcap" |
+"\\bigwedge" |
+"\\bigotimes" |
+"\\coprod" |
+"\\bigsqcup" |
+"\\bigodot" |
+"\\int" |
+"\\oint" |
+"\\biguplus";
+
+Arrows=
+"\\leftarrow" |
+"\\gets" |
+"\\longleftarrow" |
+"\\uparrow" |
+"\\rightarrow" |
+"\\to" |
+"\\longrightarrow" |
+"\\downarrow" |
+"\\leftrightarrow" |
+"\\longleftrightarrow" |
+"\\updownarrow" |
+"\\Leftarrow" |
+"\\Longleftarrow" |
+"\\Uparrow" |
+"\\Rightarrow" |
+"\\Longrightarrow" |
+"\\Downarrow" |
+"\\Leftrightarrow" |
+"\\Longleftrightarrow" |
+"\\Updownarrow" |
+"\\mapsto" |
+"\\longmapsto" |
+"\\nearrow" |
+"\\hookleftarrow" |
+"\\hookrightarrow" |
+"\\searrow" |
+"\\leftharpoonup" |
+"\\rightharpoonup" |
+"\\swarrow" |
+"\\leftharpoondown" |
+"\\rightharpoondown" |
+"\\nwarrow" |
+"\\rightleftharpoons" |
+"\\iff" |
+"\\leadsto";
+
+
+Delimiters=
+"\\uparrow" |
+"\\Uparrow" |
+"\\lbrack" |
+"\\rbrack" |
+"\\downarrow" |
+"\\Downarrow" |
+"\\{" |
+"\\lbrace" |
+"\\}" |
+"\\rbrace" |
+"\\updownarrow" |
+"\\Updownarrow" |
+"\\langle" |
+"\\rangle" |
+"\\vert" |
+"\\|" |
+"\\Vert" |
+"\\lfloor" |
+"\\rfloor" |
+"\\lceil" |
+"\\rceil" |
+"\\" |
+"\\backslash"; 
+
+Large_Delimiters=
+"\\lgroup" |
+"\\rgroup" |
+"\\lmoustache" |
+"\\rmoustache" |
+"\\arrowvert" |
+"\\Arrowvert" |
+"\\bracevert"; 
+
+Miscellaneous_Symbols=
+"\\dots" |
+"\\cdots" |
+"\\vdots" |
+"\\ddots" |
+"\\hbar" |
+"\\imath" |
+"\\jmath" |
+"\\ell" |
+"\\Re" |
+"\\Im" |
+"\\aleph" |
+"\\wp" |
+"\\forall" |
+"\\exists" |
+"\\partial" |
+"\\prime" |
+"\\emptyset" |
+"\\infty" |
+"\\nabla" |
+"\\triangle" |
+"\\Box" |
+"\\Diamond" |
+"\\top" |
+"\\surd" |
+"\\diamondsuit" |
+"\\clubsuit" |
+"\\spadesuit" |
+"\\neg" |
+"\\lnot" |
+"\\flat" |
+"\\" |
+"\\natural" |
+"\\sharp"; 
+
+Non_Mathematical_Symbols=
+"\\dag" |
+"\\\S" |
+"\\\copyright" |
+"\\\ddag" |
+"\\\P" |
+"\\\pounds"; 
+
+AMS_Delimiters=
+"\\\ulcorner" |
+"\\\urcorner" |
+"\\\llcorner" |
+"\\\lrcorner"; 
+
+AMS_Greek_and_Hebrew=
+"\\\digamma" |
+"\\\varkappa" |
+"\\\beth" |
+"\\\daleth" |
+"\\\gimel"; 
+
+
+AMS_Binary_Relations=
+"\\lessdot" |
+"\\gtrdot" |
+"\\doteqdot" |
+"\\Doteq" |
+"\\leqslant" |
+"\\geqslant" |
+"\\risingdotseq" |
+"\\eqslantless" |
+"\\eqslantgtr" |
+"\\fallingdotseq" |
+"\\leqq" |
+"\\geqq" |
+"\\eqcirc" |
+"\\lll" |
+"\\llless" |
+"\\ggg" |
+"\\gggtr" |
+"\\circeq" |
+"\\lesssim" |
+"\\gtrsim" |
+"\\triangleq" |
+"\\lessapprox" |
+"\\gtrapprox" |
+"\\bumpeq" |
+"\\lessgtr" |
+"\\gtrless" |
+"\\Bumpeq" |
+"\\lesseqgtr" |
+"\\gtreqless" |
+"\\thicksim" |
+"\\lesseqqgtr" |
+"\\gtreqqless" |
+"\\thickapprox" |
+"\\preccurlyeq" |
+"\\succcurlyeq" |
+"\\approxeq" |
+"\\curlyeqprec" |
+"\\curlyeqsucc" |
+"\\backsim" |
+"\\precsim" |
+"\\succsim" |
+"\\backsimeq" |
+"\\precapprox" |
+"\\succapprox" |
+"\\vDash" |
+"\\subseteqq" |
+"\\supseteqq" |
+"\\Vdash" |
+"\\Subset" |
+"\\Supset" |
+"\\Vvdash" |
+"\\sqsubset" |
+"\\sqsupset" |
+"\\backepsilon" |
+"\\therefore" |
+"\\because" |
+"\\varpropto" |
+"\\shortmid" |
+"\\shortparallel" |
+"\\between" |
+"\\smallsmile" |
+"\\smallfrown" |
+"\\pitchfork" |
+"\\vartriangleleft" |
+"\\vartriangleright" |
+"\\blacktriangleleft" |
+"\\trianglelefteq" |
+"\\trianglerighteq" |
+"\\blacktriangleright";
+
+AMS_Arrows=
+"\\dashleftarrow" |
+"\\dashrightarrow" |
+"\\multimap" |
+"\\leftleftarrows" |
+"\\rightrightarrows" |
+"\\upuparrows" |
+"\\leftrightarrows" |
+"\\rightleftarrows" |
+"\\downdownarrows" |
+"\\Lleftarrow" |
+"\\Rrightarrow" |
+"\\upharpoonleft" |
+"\\twoheadleftarrow" |
+"\\twoheadrightarrow" |
+"\\upharpoonright" |
+"\\leftarrowtail" |
+"\\rightarrowtail" |
+"\\downharpoonleft" |
+"\\leftrightharpoons" |
+"\\rightleftharpoons" |
+"\\downharpoonright" |
+"\\Lsh" |
+"\\Rsh" |
+"\\rightsquigarrow" |
+"\\" |
+"\\looparrowleft" |
+"\\looparrowright" |
+"\\leftrightsquigarrow" |
+"\\curvearrowleft" |
+"\\curvearrowright" |
+"\\circlearrowleft" |
+"\\circlearrowright"; 
+
+AMS_Negated_Binary_Relations_and_Arrows=
+"\\nless" |
+"\\ngtr" |
+"\\varsubsetneqq" |
+"\\lneq" |
+"\\gneq" |
+"\\varsupsetneqq" |
+"\\nleq" |
+"\\ngeq" |
+"\\nsubseteqq" |
+"\\nleqslant" |
+"\\ngeqslant" |
+"\\nsupseteqq" |
+"\\lneqq" |
+"\\gneqq" |
+"\\nmid" |
+"\\lvertneqq" |
+"\\gvertneqq" |
+"\\nparallel" |
+"\\nleqq" |
+"\\ngeqq" |
+"\\nshortmid" |
+"\\lnsim" |
+"\\gnsim" |
+"\\nshortparallel" |
+"\\lnapprox" |
+"\\gnapprox" |
+"\\nsim" |
+"\\nprec" |
+"\\nsucc" |
+"\\ncong" |
+"\\npreceq" |
+"\\nsucceq" |
+"\\nvdash" |
+"\\precneqq" |
+"\\succneqq" |
+"\\nvDash" |
+"\\precnsim" |
+"\\succnsim" |
+"\\nVdash" |
+"\\precnapprox" |
+"\\succnapprox" |
+"\\nVDash" |
+"\\subsetneq" |
+"\\supsetneq" |
+"\\ntriangleleft" |
+"\\varsubsetneq" |
+"\\varsupsetneq" |
+"\\ntriangleright" |
+"\\nsubseteq" |
+"\\nsupseteq" |
+"\\ntrianglelefteq" |
+"\\subsetneqq" |
+"\\supsetneqq" |
+"\\ntrianglerighteq" |
+"\\nleftarrow" |
+"\\nrightarrow" |
+"\\nleftrightarrow" |
+"\\nLeftarrow" |
+"\\nRightarrow" |
+"\\nLeftrightarrow";
+
+AMS_Binary_Operators= 
+"\\dotplus" |
+"\\centerdot" |
+"\\intercal" |
+"\\ltimes" |
+"\\rtimes" |
+"\\divideontimes" |
+"\\Cup" |
+"\\doublecup" |
+"\\Cap" |
+"\\doublecap" |
+"\\smallsetminus" |
+"\\veebar" |
+"\\barwedge" |
+"\\doublebarwedge" |
+"\\boxplus" |
+"\\boxminus" |
+"\\circleddash" |
+"\\boxtimes" |
+"\\boxdot" |
+"\\circledcirc" |
+"\\leftthreetimes" |
+"\\rightthreetimes" |
+"\\circledast" |
+"\\curlyvee" |
+"\\curlywedge";
+
+AMS_Miscellaneous=
+"\\hbar" |
+"\\hslash" |
+"\\Bbbk" |
+"\\square" |
+"\\blacksquare" |
+"\\circledS" |
+"\\vartriangle" |
+"\\blacktriangle" |
+"\\complement" |
+"\\triangledown" |
+"\\blacktriangledown" |
+"\\Game" |
+"\\lozenge" |
+"\\blacklozenge" |
+"\\bigstar" |
+"\\angle" |
+"\\measuredangle" |
+"\\sphericalangle" |
+"\\diagup" |
+"\\diagdown" |
+"\\backprime" |
+"\\nexists" |
+"\\Finv" |
+"\\varnothing" |
+"\\eth" |
+"\\mho" ;
+
+Math_Alphabets=
+"\\mathrm{ABCdef}" |
+"\\mathit{ABCdef}" |
+"\\mathnormal{ABCdef}" |
+"\\mathcal{ABC}" |
+"\\mathcal{ABC}" |
+"\\mathcal{ABC}" |
+"\\mathscr{ABC}" |
+"\\mathfrak{ABCdef}" |
+"\\mathbb{ABC}"; 
+
 
 latex = eq | 
-equation |
-math_mode |
-Italic_Greek |
-func_normal |
-func_normal braces |
-func_normal parens |
-summation |
-"-"? integral |
-"W" | "u"|"v"|"w" | "n"|
-parens "^" (any-'{') | 
-parens "^" braces  |
-">" | 
-"<" |  
+Math_Mode_Accents |
+Lowercase_Greek_Letters | 
+Uppercase_Greek_Letters |
+Binary_Relations | 
+Binary_Operators | 
+BIG_Operators | 
+Arrows | 
+Delimiters | 
+Large_Delimiters | 
+Miscellaneous_Symbols | 
+Non_Mathematical_Symbols | 
+AMS_Delimiters | 
+AMS_Greek_and_Hebrew | 
+AMS_Binary_Relations | 
+AMS_Arrows | 
+AMS_Negated_Binary_Relations_and_Arrows | 
+AMS_Binary_Operators | 
+AMS_Miscellaneous | 
+Math_Alphabets | 
 "&=" |
 "+" | 
+"," |
+"<" |  
 "<<" |
 "=" | 
+">" | 
+"\\," | 
 "\\\\"  |
 "^" |
 "|" |
 [ ]+ "&" [ ]+ |
 "$" (any-"$"){1,80} "$"  | 
-"e" "^" braces |
-"\\," | 
-"," |
 "a" |
 "A" |
-"G" parens |
-"g" parens |
-"I" parens | 
 "\\abs" |
 abstract  |
-"\\acute" |
+"\\acute" braces?|
 "\\add" |
 "\\address" |
 "\\addtocontents" |
 "\\addtocounter" |
 "\\addtolength" |
 "\\affiliation" braces |
-"\\aleph" |
 align  |
 aligned  |
 "\\alph" |
 "\\Alph" |
-"\\alpha" |
-integer? alpha "^" (any-'{') |
-integer? alpha "^" braces |
 alpha underscore (any-'{') | 
 alpha underscore (any-'{') "^" (any-'{')| 
 alpha underscore braces |  
 alpha underscore braces "^" braces |
-"\\amalg" |
 "\\and" |
-"\\angle" |
 "\\appendix" |
-"\\approx" |
 "\\arg" |
 array  |
 "\\arraycolsep" |
 "\\arrayrulewidth" |
 "\\arraystretch" |
-"\\ast" |
-"\\asymp" |
 "\\author" |
 "\\author" braces |
 "\\autoref" braces |
 "b" |
 "\\backslash" |
-"\\bar" |
-"\\bar" braces |
+"\\bar" braces? |
 "\\baselineskip" |
 "\\baselinestretch" |
 "\\Bbb" |
 "\\begin" braces |
 "\\begin[pos]" |
-"\\beta" |
 "\\bf" |
 "\\bibitem" |
 "\\bibitem" braces |
 "\\bibitem text" |
-"\\bibliography" |
-"\\bibliographystyle" |
-"\\bigcap" |
-"\\bigcirc" |
-"\\bigcup" |
-"\\bigg" |
-"\\biggl" |
-"\\biggr" |
-"\\bigl" |
-"\\bigodot" |
-"\\bigoplus" |
-"\\bigotimes" |
-"\\bigr" |
-"\\bigskip" |
-"\\bigskipamount" |
-"\\bigsqcup" |
-"\\bigtriangledown" |
-"\\bigtriangleup" |
-"\\biguplus" |
-"\\bigvee" |
-"\\bigwedge" |
-"\\binname" |
 "\\binom" |
 "\\binom" braces braces | 
 bin_op | 
@@ -465,199 +964,73 @@ bmatrix  |
 "\\boldsymbol" |
 "\\bot" |
 "\\bottomfraction" |
-"\\bowtie" |
-"\\box" |
-"\\Box" |
-"\\boxed" |
-"\\boxmaxdepth" |
 braces  |
 braces "^" braces |
 brackets  |
-"\\breve" |
-"\\bslash" |
-"\\cal" |
-"\\cap" |
-"\\caption" |
-"\\caption" braces |
+"\\breve" braces? |
+"\\caption" braces? |
 cases  |
-"\\cc" |
-"\\cdot" |
-"\\cdots" |
 center  |
-"\\centering" |
-"\\centerline" braces |
-"\\cf" |
+"\\centerline" braces? |
 "\\cfrac" |
-"\\chapter" |
-"\\chapter*" |
-"\\chapter[toctitle]" |
-"\\chardef" |
-"\\check" |
-"\\chi" |
+"\\check" braces? |
 "\\cite" braces |
-"\\cleardoublepage" |
-"\\clearpage" |
-"\\cline" |
-"\\closing" |
-"\\clubsuit" |
-"\\cn" |
-"\\colon" |
-"\\columnsep" |
-"\\columnseprule" |
-"\\columnwidth" |
 comment |
-"\\cong" |
-"\\contentsline" |
-"\\coprod" |
-"\\copyright" |
 corollary  |
-"\\cov" |
-"\\cs" |
-"\\csc" |
-"\\ctagsplit" |
-"\\cup" |
 "\\d" |
-"\\dag" |
-"\\dagger" |
-"\\dashbox" |
-"\\dashv" |
-"\\date" |
 "\\date" braces |
-"\\day" |
-"\\dbinom" |
-"\\dblfloatpagefraction" |
-"\\dblfloatsep" |
-"\\dbltextfloatsep" |
-"\\dbltopfraction" |
-"\\ddag" |
-"\\ddagger" |
-"\\ddddot" |
-"\\dddot" |
-"\\ddot" |
-"\\ddots" |
-"\\def" |
+"\\ddot" braces |
 definition  |
-"\\deg" |
-"\\delimiterfactor" |
-"\\delta" |
-"\\Delta" |
 "\\delta " underscore braces |
 "\\delta" underscore braces | 
 description  |
-"\\det" |
-"\\diamond" |
-"\\Diamond" |
-"\\diamondsuit" |
-"\\dim" |
-"\\dimen" |
+"\\dfrac" |
+"\\dfrac" (any-'{') (any-'{') |
+"\\dfrac" (any-'{') braces |
+"\\dfrac" braces (any-'{') |
+"\\dfrac" braces braces | 
 displaymath  |
-"\\displaystyle" |
-"\\div" |
-"\\documentclass" |
-"\\documentclass" braces |
+"\\documentclass" braces? |
 "\\documentclass" brackets braces |
 "\\documentstyle" |
-"\\documentstyle[substy]" |
-"\\dot" |
-"\\dot" braces |
-"\\doteq" |
-"\\dotfill" |
-"\\dots" |
-"\\dotsb" |
-"\\dotsc" |
-"\\dotsi" |
-"\\dotsm" |
+"\\dot" braces? |
 "\\doublerulesep" |
 "\\downarrow" |
 "\\Downarrow" |
 "\\dp" |
 "d" ("x" | "y" | "z") | 
-"\\ell" |
-"\\else" |
-"\\em" |
+"e" "^" braces |
 "\\email" braces |
-"embraces" |
-"\\emph" |
 "\\emph" braces |
-"\\emptyset" |
-"\\en" |
-"\\encl" |
-"\\end" |
 "\\end" braces |
-"\\endinput" |
 enumerate  |
-"\\env" |
-"\\envert" |
-"\\epsilon" |
 "\\eq" braces |
 eqnarray  |
-"\\eqref" |
 "\\eqref" braces |
-"\\equiv" |
-"\\esssup" |
-"\\eta" |
-"\\eval" |
-"\\evensidemargin" |
+equation |
 example  |
 "\\exists" |
 "f" |
-"\\fbox" |
-"\\fboxrule" |
-"\\fboxsep" |
 "\\f" braces |
-"\\fi" |
 figure  |
-"\\fill" |
-"\\flat" |
-"\\floatpagefraction" |
-"\\floatsep" |
-"\\flushbottom" |
 flushleft  |
 flushright  |
 "\\fmf" braces |
 "\\fmfforce" braces |
 "\\fn" |
 "\\fnsymbol" |
-"\\footheight" |
-"\\footins" |
-"\\footnote" |
 "\\footnote" braces |
-"\\footnotemark" |
-"\\footnoterule" |
-"\\footnotesep" |
-"\\footnotesize" |
-"\\footnotetext" |
-"\\footskip" |
-"\\forall" |
 "f" parens |
-
 "\\frac" |
-"\\frac" braces braces | 
-"\\frac" braces (any-'{') |
-"\\frac" (any-'{') braces |
 "\\frac" (any-'{') (any-'{')  | 
-"\\dfrac" |
-"\\dfrac" braces braces | 
-"\\dfrac" braces (any-'{') |
-"\\dfrac" (any-'{') braces |
-"\\dfrac" (any-'{') (any-'{') |
-
-"\\tfrac" |
-"\\tfrac" braces braces | 
-"\\tfrac" braces (any-'{') |
-"\\tfrac" (any-'{') braces |
-"\\tfrac" (any-'{') (any-'{') | 
-
-"\\frame" |
-frame  |
-"\\framebox" |
-"\\framebox[size][pos]" |
-"\\frame" brackets braces |
-"\\frametitle" braces |
+"\\frac" (any-'{') braces |
+"\\frac" braces (any-'{') |
+"\\frac" braces braces | 
+func_normal |
+func_normal braces |
+func_normal parens |
 "g" |
 "G" |
-"\\gamma" |
-"\\Gamma" |
 gather  |
 "\\gcd" |
 "\\gdef" |
@@ -669,23 +1042,11 @@ gather  |
 "\\global" |
 "\\glossary" |
 "\\glossaryentry" |
-"\\grave" |
-"\\hat" |
-"\\hat" braces |
-"\\hbar" |
-"\\hbox" |
+"g" parens |
+"G" parens |
+"\\grave" braces? |
+"\\hat" braces? |
 "\\hbox" braces |
-"\\hdots" |
-"\\hdotsfor" |
-"\\headheight" |
-"\\headsep" |
-"\\heartsuit" |
-"\\hfill" |
-"\\hfuzz" |
-"\\hline" |
-"\\hom" |
-"\\hookleftarrow" |
-"\\hookrightarrow" |
 "\\href" braces braces |
 "\\hrulefill" |
 "\\hspace" |
@@ -696,12 +1057,9 @@ gather  |
 "\\hyphenation" |
 "-i" | 
 "\\idotsint" |
-"\\iff" |
 "\\iffalse" |
 "\\ifvoid" |
 "\\ifx" |
-"\\Im" |
-"\\imath" |
 "\\in" |
 "\\include" |
 "\\includeonly" |
@@ -709,26 +1067,24 @@ gather  |
 "\\indexentry" |
 "\\indexspace" |
 "\\inf" |
-"\\infty" |
 "\\input" |
 "\\input" braces |
 integer | 
+integer? alpha "^" (any-'{') |
+integer? alpha "^" braces |
 "-"? integer ("x"|"y"|"z") |  
+"-"? integral |
 "\\interval" |
 "\\intextsep" |
-"\\iota" |
+"I" parens | 
 "\\it" |
+Italic_Greek |
 "\\item" |
 itemdecl  |
 itemdescr  |
 "\\itemindent" |
 itemize  |
-"\\itemsep" |
-"\\item[text]" |
-"\\jmath" |
-"\\Join" |
 "K" |
-"\\kappa" |
 "\\ker" |
 "\\ket" braces |
 "\\keywords" braces |
@@ -737,88 +1093,12 @@ itemize  |
 "\\l" |
 "\\label" |
 "\\label" braces |
-"\\labelenumi" |
-"\\labelsep" |
-"\\labelwidth" |
-"\\lambda" |
-"\\Lambda" |
-"\\land" |
-"\\langle" |
-"\\large" |
-"\\Large" |
-"\\LARGE" |
-"\\LaTeX" |
-"\\lbrace" |
-"\\lbrack" |
-"\\lceil" |
-"\\ldots" |
-"\\le" |
-"\\leadsto" |
-"\\left" |
 "\\left" parens |
-"-"? "\\operatorname" braces |
-"\\left*" |
-"\\leftarrow" |
-"\\Leftarrow" |
-"\\lefteqn" |
-"\\leftharpoondown" |
-"\\leftharpoonup" |
-"\\leftmargin" |
-"\\leftmargini" |
-"\\leftmarginvi" |
-"\\leftrightarrow" |
-"\\Leftrightarrow" |
-"\\leftroot" |
 lemma  |
-"\\lemref" |
-"\\leq" |
-"\\let" |
-"\\lfloor" |
-"\\lg" |
-"\\lhd" |
-"\\lim" |
-"\\liminf" |
-"\\limits" |
-"\\limsup" |
-"\\lim" underscore braces |
 "\\lim " underscore braces |
-"\\linebreak" |
-"\\linebreak[n]" |
-"\\linethickness" |
-"\\linewidth" |
+"\\lim" underscore braces |
 list |
-"\\listoffigures" |
-"\\listoftables" |
-"\\listparindent" |
-"\\ll" |
-"\\lnot" |
-"\\longleftarrow" |
-"\\Longleftarrow" |
-"\\longleftrightarrow" |
-"\\Longleftrightarrow" |
-"\\longmapsto" |
-"\\longrightarrow" |
-"\\Longrightarrow" |
-"\\lor" |
-"\\lowercase" |
-"\\lq" |
 lstlisting  |
-"\\lvert" |
-"\\makeatletter" |
-"\\makeatother" |
-"\\makebox" |
-"\\makebox[size][pos]" |
-"\\makeglossary" |
-"\\makeindex" |
-"\\maketitle" |
-"\\mapsto" |
-"\\marginpar" |
-"\\marginparpush" |
-"\\marginparsep" |
-"\\marginparwidth" |
-"\\marginrulewidth" |
-"\\markboth" |
-"\\markright" |
 math |
 "\\mathbb" braces |
 "\\mathbf" |
@@ -826,386 +1106,74 @@ math |
 "\\mathcal" |
 "\\mathcal" braces |
 "\\mathinner" |
+math_mode |
 "\\mathop" |
 "\\mathrm" braces |
-"\\mathrm{d}t" |
+"\\mathrm{d}" alpha |
 matrix  |
-"\\max" |
-"\\maxdepth" |
-"\\mbox" |
 "\\mbox" braces |
-"\\meas" |
-"\\medskip" |
-"\\medskipamount" |
-"\\mho" |
-"\\mid" |
-"\\min" |
 minipage  |
-"\\mit" |
-"\\mod" |
-"\\models" |
-"\\month" |
-"\\mp" |
-"\\mu" |
-"\\multicolumn" |
 multline  |
-"\\multlinegap" |
-"\\nabla" |
-"\\natural" |
-"\\ne" |
-"\\nearrow" |
-"\\neg" |
-"\\neq" |
-"\\newcommand" |
-"\\newcounter[name]" |
-"\\newdimen" |
-"\\newfont" |
-"\\newlength" |
-"\\newline" |
-"\\newpage" |
-"\\newsavebox" |
-"\\newtheorem" |
-"\\newtheorem[sectyp]" |
-"\\ni" |
-"\\nl" |
-"\\nofiles" |
-"\\noindent" |
-"\\nolinebreak[n]" |
-"\\non" |
-"\\nonumber" |
-"\\nopagebreak[n]" |
-"\\norm" |
-"\\normalfont" |
-"\\normalmarginpar" |
-"\\normalsize" |
-"\\not" |
-"\\not=" |
-"\\notag" |
-"\\notin" |
-"\\ntt" |
-"\\nu" |
-"\\numberwithin" |
-"\\nwarrow" |
-"\\o" |
-"\\O" |
-"\\obeycr" |
-"\\oddsidemargin" |
-"\\odot" |
-"\\oe" |
-"\\OE" |
-"\\omega" |
-"\\Omega" |
-"\\ominus" |
-"\\onecolumn" |
-"\\opening" |
-"\\oplus" |
-"\\oslash" |
-"\\otimes" |
-"\\overleftarrow" |
-"\\overleftrightarrow" |
-"\\overline" |
-"\\overline" braces |
-"\\overrightarrow" |
-"\\overset" |
-"\\owns" |
-"\\P" |
-"\\pagebreak[n]" |
-"\\pagenumbering" |
-"\\pageref" |
-"\\pagestyle" |
-"\\paragraph*" |
-"\\paragraph[toctitle]" |
-"\\parallel" |
-"\\parbox[pos]" |
+"-"? "\\operatorname" braces |
 parens  |
-"\\parindent" |
-"\\parsep" |
-"\\parskip" |
-"\\part*" |
-"\\partial" |
-"\\partopsep" |
-"\\part[toctitle]" |
-"\\pdfoutput=1" |
-"\\per" |
-"\\perp" |
-"\\phantom" |
-"\\phantom" braces |
-"\\phi" |
-"\\Phi" |
-"\\pi" |
-"\\Pi" |
+parens "^" (any-'{') | 
+parens "^" braces  |
 picture  |
-"\\pkg" |
-"\\pm" |
 pmatrix  |
-"\\pmb" |
-"\\pmod" |
-"\\pod" |
-"\\poptabs" |
-"\\pounds" |
-"\\Pr" |
-"\\prec" |
-"\\preceq" |
-"\\prime" |
-"\\prod" |
 proof  |
 prop  |
 proposition  |
-"\\propto" |
-"\\protect" |
-"\\ps" |
-"\\psi" |
-"\\Psi" |
-"\\pushtabs" |
-"\\put" |
-"\\qed" |
-"\\qquad" |
-"\\quad" |
 quote  |
 "\\r" |
-"\\raggedbottom" |
-"\\raggedleft" |
-"\\raggedright" |
-"\\raisebox" |
-"\\rangle" |
-"\\rbrace" |
-"\\rbrack" |
-"\\rceil" |
-"\\Re" |
-"\\ref" |
 "\\ref" braces |
 "\\relax" |
 rem  |
 remark  |
-"\\renewcommand" |
-"\\renewcommand" braces |
-"\\renewenvironment" |
-"\\restorecr" |
-"\\reversemarginpar" |
-"\\rfloor" |
-"\\rhd" |
-"\\rho" |
-"\\right" |
-"\\right*" |
-"\\rightarrow" |
-"\\Rightarrow" |
-"\\rightharpoondown" |
-"\\rightharpoonup" |
-"\\rightleftharpoons" |
-"\\rightmargin" |
-"\\rm" |
-"\\roman" |
-"\\Roman" |
-"\\rq" |
-"\\rule" |
-"\\rule[height]" |
-"\\rvert" |
-"\\S" |
-"\\savebox" |
-"\\sbox" |
-"\\sc" |
-"\\scriptscriptstyle" |
-"\\scriptsize" |
-"\\scriptstyle" |
-"\\searrow" |
-"\\secref" |
-"\\section" |
-"\\section*" |
-"\\section" braces |
-"\\section" brackets |
-"\\sectionmark" |
-"\\seg" |
-"\\setbox" |
-"\\setcounter" |
-"\\setcounter" braces |
-"\\setlength" |
+"\\renewcommand" braces? |
+"\\setcounter" braces? |
 "\\setlength" braces |
-"\\setminus" |
-"\\settowidth" |
 "\\sf" |
-"\\sharp" |
-"\\shortstack[pos]" |
-"\\sideset" |
-"\\sigma" |
-"\\Sigma" |
-"\\signature" |
-"\\sim" |
-"\\simeq" |
-"\\skip" |
-"\\sl" |
-"\\sloppy" |
-"\\small" |
-"\\smallint" |
-"\\smallskip" |
-"\\smallskipamount" |
-"\\smash" |
-"\\smile" |
-"\\spadesuit" |
 split  |
-"\\sqcap" |
-"\\sqcup" |
-"\\sqrt" brackets |
 "\\sqrt" braces |
-"\\sqsubset" |
-"\\sqsubseteq" |
-"\\sqsupset" |
-"\\sqsupseteq" |
-"\\ss" |
-"\\st" |
-"\\stackrel" |
+"\\sqrt" brackets |
 "\\stackrel" braces |
-"\\star" |
-"\\stop" |
 subequations  |
-"\\subparagraph*" |
-"\\subparagraph[toctitle]" |
-"\\subsection" |
-"\\subsection*" |
-"\\subsection" braces |
-"\\subsection[toctitle]" |
-"\\subset" |
-"\\subseteq" |
-"\\substack" |
-"\\subsubsection*" |
-"\\subsubsection[toctitle]" |
-"\\succ" |
-"\\succeq" |
-"\\sup" |
-"\\supset" |
-"\\supseteq" |
-"\\surd" |
-"\\swarrow" |
-"\\symbol" |
-"\\t" |
-"\\tabbing" |
-"\\tabbingsep" |
-"\\tabcolsep" |
+summation |
 table  |
-"\\tableofcontents" |
-tabular  |
-"\\tag" |
-"\\tan" |
-"\\tanh" |
-"\\tau" |
-"\\tbinom" |
-"\\TeX" |
-"\\text" |
-"\\textbf" |
 "\\textbf" braces |
 "\\text" braces |
-"\\textfloatsep" |
-"\\textfraction" |
-"\\textheight" |
-"\\textit" |
 "\\textit" braces |
-"\\textstyle" |
 "\texttt" braces |
-"\\textup" |
-"\\textwidth" |
-"\\thanks" |
+"\\tfrac" |
+"\\tfrac" (any-'{') (any-'{') | 
+"\\tfrac" (any-'{') braces |
+"\\tfrac" braces (any-'{') |
+"\\tfrac" braces braces | 
 thebibliography  |
 "\\theequation" |
 theorem  |
-"\\theoremstyle" |
-"\\theta" |
-"\\Theta" |
-"\\thicklines" |
-"\\thinlines" |
-"\\thinspace" |
-"\\thispagestyle" |
 thm  |
-"\\thmref" |
-tikzpicture  |
-"\\tilde" |
-"\\tilde" braces |
-"\\times" |
-"\\tiny" |
-"\\title" |
+"\\tilde" braces? |
 "\\title" braces |
 titlepage  |
-"\\to" |
-"\\today" |
-"\\top" |
-"\\topfraction" |
-"\\topmargin" |
-"\\topsep" |
-"\\topskip" |
-"\\triangle" |
-"\\triangleleft" |
-"\\triangleright" |
-"\\tt" |
-"\\ttfamily" |
-"\\twocolumn" |
-"\\twocolumn[text]" |
-"\\typein[\cs]" |
-"\\typeout" |
 "\\u" |
-"\\unboldmath" |
-"\\underbrace" |
-"\\underleftarrow" |
-"\\underleftrightarrow" |
-"\\underline" |
 "\\underline" braces |
-"\\underrightarrow" |
 underscore | 
 underscore braces "^" braces |
-"\\underset" |
-"\\unitlength" |
-"\\unlhd" |
-"\\unrhd" |
-"\\unvbox" |
-"\\uparrow" |
-"\\Uparrow" |
-"\\updownarrow" |
-"\\Updownarrow" |
-"\\uplus" |
-"\\uproot" |
-"\\upsilon" |
-"\\Upsilon" |
 "\\url" braces |
 "\\usebox" |
-"\\usecounter" |
-"\\usepackage" |
 "\\usepackage" braces |
 "\\v" |
-"\\value" |
-"\\varepsilon" |
-"\\varinjlim" |
-"\\varliminf" |
-"\\varlimsup" |
-"\\varphi" |
-"\\varpi" |
-"\\varprojlim" |
-"\\varrho" |
-"\\varsigma" |
-"\\vartheta" |
-"\\vbox" |
-"\\vdash" |
-"\\vdots" |
-"\\vec" |
-"\\vec" braces |
-"\\vee" |
-"\\verb" |
+"\\vec" braces? |
 verbatim  |
-"\\vert" |
-"\\Vert" |
-"\\vfill" |
-"\\vline" |
-"\\vrule" |
-"\\vskip" |
-"\\vspace" |
-"\\vspace*" |
 "\\vspace" braces |
-"\\wedge" |
-"\\wh" |
-"\\widehat" |
-"\\widehat" braces |
-"\\widetilde" |
-"\\widetilde" braces | 
+"\\widehat" braces? |
+"\\widetilde" braces? | 
 "\\wp" |
 "\\wr" |
 ws | 
 "\\wt" |
+"W" | "u"|"v"|"w" | "n"|
 "x" | 
 "\\xdef" |
 "\\xi" |
