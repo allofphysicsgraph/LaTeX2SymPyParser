@@ -8,7 +8,7 @@ ordered_tokens = list()
 with open("tf_idf", "r") as f:
     output = dict()
     file_data = f.read()
-    lst = re.split("id:([a-f0-9]{16}:\scount:\d+\sdocs:\d+\stok:)", file_data)
+    lst = re.split("id:([a-f0-9]{16}:\scount:\d+\sdocs:\d+\stf_idf:\d+\.\d+\stok:)", file_data)
     lst = lst[1:]
     tuples = zip(lst[0::2], lst[1::2])
     for tpl in tuples:

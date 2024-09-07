@@ -881,8 +881,10 @@ Math_Alphabets=
 "\\mathsf" braces|
 "\\mathbb" braces; 
 
+symbols = "x" | "y" | "z" | "t" |"w" | "a" | "b" |"c" | "s" | "p" | "W" | "u"|"v"|"w" | "n"; 
 
 latex = eq | 
+symbols | 
 Math_Mode_Accents |
 Lowercase_Greek_Letters | 
 Uppercase_Greek_Letters |
@@ -1095,6 +1097,7 @@ itemize  |
 "\\label" |
 "\\label" braces |
 "\\left" parens |
+"\\left" brackets |
 lemma  |
 "\\lim " underscore braces |
 "\\lim" underscore braces |
@@ -1170,14 +1173,11 @@ verbatim  |
 "\\wr" |
 ws | 
 "\\wt" |
-"W" | "u"|"v"|"w" | "n"|
-"x" | 
 "\\xdef" |
 "\\xi" |
 "\\Xi" |
 "\\xleftarrow" |
 "\\xrightarrow" |
-"y" | 
 "\\year" |
 "\\zeta" |
 "\\zeta" "^" braces; 
